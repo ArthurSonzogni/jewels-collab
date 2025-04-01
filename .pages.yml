@@ -10,6 +10,14 @@ content:
     filename: index.md
     fields:
       - {name: title, label: Title, type: string}
+      - name: video
+        label: Video
+        type: object
+        list: true
+        fields:
+          - {name: title, label: Title, type: string}
+          - {name: video-portrait, label: Video Portrait, type: string}
+          - {name: video-landscape, label: Video Landscape, type: string}
 
   - name: product
     label: Products
