@@ -1,4 +1,12 @@
 export default defineNuxtConfig({
+  target: 'static',
+  ssr: false,
+  site: {
+    url: 'https://arthursonzogni.github.io',
+  },
+  app: {
+    baseURL: '/jewels-collab/',
+  },
   compatibilityDate: '2025-01-01',
   devtools: { enabled: true },
   modules: [
