@@ -23,9 +23,6 @@ const items = ref<NavigationMenuItem[]>([
   },
 ])
 
-console.log(products.value);
-console.log(home.value);
-
 </script>
 
 <template>

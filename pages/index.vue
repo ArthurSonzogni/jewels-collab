@@ -3,33 +3,21 @@ const { data: home } = await useAsyncData(() =>
   queryCollection('content').path('/').first()
 );
 
-const { data: products } = await useAsyncData(() =>
-  queryCollection('products').all()
-);
+const items = ref(home.value?.meta.videos);
 
 useSeoMeta({
   title: home.value?.title,
   description: home.value?.description
 })
 
-const videos = ref([
-  {
-    portrait:  "//www.jessicamccormack.com/cdn/shop/videos/c/vp/0c873f56a2034a67966aecafd626a702/0c873f56a2034a67966aecafd626a702.HD-1080p-7.2Mbps-44093355.mp4?v=0",
-    landscape: "//www.jessicamccormack.com/cdn/shop/videos/c/vp/fc56757551be413db6158c59cff53333/fc56757551be413db6158c59cff53333.HD-1080p-7.2Mbps-44093333.mp4?v=0"
-  },
-  {
-    portrait:  "//www.jessicamccormack.com/cdn/shop/videos/c/vp/0c873f56a2034a67966aecafd626a702/0c873f56a2034a67966aecafd626a702.HD-1080p-7.2Mbps-44093355.mp4?v=0",
-    landscape: "//www.jessicamccormack.com/cdn/shop/videos/c/vp/fc56757551be413db6158c59cff53333/fc56757551be413db6158c59cff53333.HD-1080p-7.2Mbps-44093333.mp4?v=0"
-  }
-]);
-const currentVideo = ref(0);
+const currentVideo = ref(1);
 
 const nextVideo = () => {
-  currentVideo.value = (currentVideo.value + 1) % videos.value.length;
+  currentVideo.value = (currentVideo.value + 1) % items.length;
 };
 
 const prevVideo = () => {
-  currentVideo.value = (currentVideo.value - 1 + videos.value.length) % videos.value.length;
+  currentVideo.value = (currentVideo.value - 1 + items.length) % items.length;
 };
 
 
@@ -38,32 +26,29 @@ const prevVideo = () => {
 <template>
   <Navbar />
 
-  <div class="video-container">
+  <UCarousel
+    v-slot="{ item }"
+    orientation="horizontal"
+    :items="items"
+    dots
+    :autoplay="{ delay: 3000 }"
+  >
+    <div class="video-container">
     <video
       preload="auto"
       playsinline
       webkit-playsinline
       autoplay
       muted
-      :src="videos[currentVideo].landscape"
-      class="background-video">
-      <source
-        :src="videos[currentVideo].portrait"
-        media="(orientation: portrait)"
-      />
-      <source
-        :src="videos[currentVideo].landscape"
-        media="(orientation: landscape)"
-      />
+      :src="item.landscape"
+      class="background-video"
+    >
+      coucou
+      <source :src="item.portrait" media="(orientation: portrait)" />
+      <source :src="item.landscape" media="(orientation: landscape)" />
     </video>
-    <div class="controls">
-      <button @click="prevVideo" class="control-btn">&#9664;</button>
-      <button @click="nextVideo" class="control-btn">&#9654;</button>
     </div>
-    <div class="overlay">
-      <h1 class="title">{{ home?.title }}</h1>
-    </div>
-  </div>
+  </UCarousel>
 
   <div class="container1">
     <header class="header">
@@ -73,13 +58,6 @@ const prevVideo = () => {
     </header>
 
   </div>
-    <div class="grid">
-      <div v-for="product in products" class="card">
-        <img :src="product.meta.image" class="image" />
-        <h2 class="title">{{ product?.title}}</h2>
-        <p class="price">{{ product.meta.price }}</p>
-      </div>
-    </div>
   <div class="container3">
   </div>
   <div class="container2">
@@ -166,7 +144,7 @@ const prevVideo = () => {
 .video-container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 100px);
   overflow: hidden;
 }
 
