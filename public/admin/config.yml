@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: ArthurSonzogni/jewels-collab
+
+media_folder: 'public/images'
+public_folder: '/images'
+
+collections:
+  - name: 'posts'
+    label: 'Blog Posts'
+    folder: 'content/posts' # Where to store blog posts
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

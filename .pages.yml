@@ -1,0 +1,31 @@
+media: 
+  input: public/images
+  output: /images
+
+content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: content/index.md
+    filename: index.md
+    fields:
+      - {name: title, label: Title, type: string}
+
+  - name: product
+    label: Products
+    type: collection
+    path: content/products
+    filename: "{fields.slug}.md"
+    fields:
+      - {name: slug, label: Slug, type: string}
+      - {name: title, label: Title, type: string}
+      - {name: short-description, label: Description, type: string}
+      - {name: price, label: Price, type: string}
+      - {name: payment-link, label: Payment Link, type: string}
+      - name: images
+        label: Images
+        type: object
+        list: true
+        fields:
+          - {name: title, label: Title, type: string}
+          - {name: image, label: Image, type: image}
