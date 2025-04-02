@@ -3,15 +3,14 @@ import { defineCollection } from '@nuxt/content'
 
 export default defineContentConfig({
   collections: {
-    products: defineCollection({
+    product: defineCollection({
       type: 'page',
-      source: 'products/*.md',
-      slug: (entry) => `products/${entry.slug}`
+      source: 'product/*.md',
     }),
     content: defineCollection({
       type: 'page',
       source: '**/*.md',
-      exclude: ['products/*.md'],
+      exclude: ['product/*.md'],
     }),
   }
 })

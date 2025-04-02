@@ -22,7 +22,7 @@ content:
   - name: product
     label: Products
     type: collection
-    path: content/products
+    path: content/product
     filename: "{fields.slug}.md"
     fields:
       - {name: slug, label: Slug, type: string}
