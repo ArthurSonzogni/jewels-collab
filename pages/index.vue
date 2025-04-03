@@ -33,25 +33,29 @@ const prevVideo = () => {
     dots
     :autoplay="{ delay: 3000 }"
   >
+    <div class="video-title">
+      {{ item.title }}
+    </div>
     <div class="video-container">
-    <video
-      preload="auto"
-      playsinline
-      webkit-playsinline
-      autoplay
-      muted
-      :src="item.landscape"
-      class="background-video"
-    >
-      coucou
-      <source :src="item.portrait" media="(orientation: portrait)" />
-      <source :src="item.landscape" media="(orientation: landscape)" />
-    </video>
+      <video
+        preload="auto"
+        playsinline
+        webkit-playsinline
+        autoplay
+        autoscroll
+        loop
+        muted
+        :src="item.landscape"
+        class="background-video"
+      >
+        <source :src="item.portrait" media="(orientation: portrait)" />
+        <source :src="item.landscape" media="(orientation: landscape)" />
+      </video>
     </div>
   </UCarousel>
 
   <div class="container1">
-    <header class="header">
+    <header class="header mt-20">
       <h1>
         {{ home?.title }}
       </h1>
@@ -68,13 +72,11 @@ const prevVideo = () => {
 <style scoped>
 .container1 {
   background: #000 url('/images/background_1.png') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   color: white;
   height: 100vh;
   width: 100vw;
-  padding: 40px;
   text-align: center;
-  font-family: 'Times New Roman', serif;
 }
 
 .container2 {
@@ -82,13 +84,11 @@ const prevVideo = () => {
   background:
     #000
     url('/images/background_2.png') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   color: white;
   height: 100vh;
   width: 100vw;
-  padding: 40px;
   text-align: center;
-  font-family: 'Times New Roman', serif;
 }
 
 .container3 {
@@ -96,13 +96,11 @@ const prevVideo = () => {
   background:
     #000
     url('/images/background_3.png') no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   color: white;
   height: 100vh;
   width: 100vw;
-  padding: 40px;
   text-align: center;
-  font-family: 'Times New Roman', serif;
 }
 
 .header h1 {
@@ -111,41 +109,24 @@ const prevVideo = () => {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background-color: rgba(34, 34, 34, 0.8);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-}
-
-.image {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 4px;
-}
-
-.title {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.price {
-  font-size: 18px;
-  color: gold;
-  margin-top: 5px;
-}
-
 .video-container {
   position: relative;
   width: 100vw;
   height: calc(100vh - 100px);
   overflow: hidden;
+}
+
+.video-title {
+  bottom: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  position:absolute;
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  z-index: 1;
 }
 
 .background-video {
@@ -163,14 +144,12 @@ const prevVideo = () => {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
 }
 
 .control-btn {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  padding: 10px 20px;
   font-size: 24px;
   cursor: pointer;
 }

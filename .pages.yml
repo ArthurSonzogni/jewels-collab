@@ -27,10 +27,9 @@ content:
     fields:
       - {name: slug, label: Slug, type: string}
       - {name: title, label: Title, type: string}
-      - {name: short-description, label: Short Description, type: string}
-      - {name: long-description, label: Long Description, type: text}
+      - {name: short_description, label: Short Description, type: string}
+      - {name: long_description, label: Long Description, type: text}
       - {name: price, label: Price, type: string}
-      - {name: payment-link, label: Payment Link, type: string}
       - {name: materials, label: Materials, type: string}
       - {name: dimensions, label: Dimensions, type: string}
       - name: images
@@ -40,21 +39,15 @@ content:
         fields:
           - {name: title, label: Title, type: string}
           - {name: image, label: Image, type: image}
-      - name: gallery
-        label: Gallery / Carousel
-        type: object
-        list: true
-        fields:
-          - {name: caption, label: Caption, type: string}
-          - {name: image, label: Image, type: image}
       - name: variations
         label: Variations
         type: object
         list: true
         fields:
           - {name: color, label: Color, type: string}
-          - {name: variant-price, label: Price for Variation, type: string}
-          - name: variant-images
+          - {name: price, label: Price for Variation, type: string}
+          - {name: payment_link, label: Payment Link, type: string}
+          - name: images
             label: Images for Variation
             type: object
             list: true

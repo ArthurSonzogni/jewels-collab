@@ -1,36 +1,31 @@
 ---
-slug: gold-bracelet
-title: "Luxurious Gold Bracelet"
-short-description: "A luxurious gold bracelet that adds a touch of sophistication."
-long-description: |
-  Our luxurious gold bracelet is a statement piece made from the finest 18k gold. The design combines classic elegance with modern flair, making it perfect for special occasions or daily wear.
+slug: bracelet-or
+title: "Bracelet en Or Luxueux"
+short_description: "Un bracelet en or luxueux qui ajoute une touche de sophistication."
+long_description: |
+  Notre bracelet en or luxueux est une pièce maîtresse fabriquée à partir de l'or 18 carats le plus fin. Le design combine l'élégance classique avec une touche moderne, ce qui le rend parfait pour les occasions spéciales ou le port quotidien.
 price: "850€"
-payment-link: "https://stripe.com/checkout/gold-bracelet"
-materials: "18k Gold"
-dimensions: "Bracelet length: 7 inches"
+payment_link: "https://buy.stripe.com/aEU7uM1Ba55GbM4dQW?prefilled_promo_code=LAUNCH"
+materials: "Or 18 carats"
+dimensions: "Longueur du bracelet: 7 pouces"
 images:
-  - title: "Bracelet Front"
-    image: "/images/gold-bracelet/front.jpg"
-  - title: "Bracelet Detail"
-    image: "/images/gold-bracelet/detail.jpg"
-gallery:
-  - caption: "Worn with elegance"
-    image: "/images/gold-bracelet/gallery1.jpg"
-  - caption: "Detailed craftsmanship"
-    image: "/images/gold-bracelet/gallery2.jpg"
+  - title: "Devant du Bracelet"
+    image: https://placehold.co/500x500/png?text=Devant+Bracelet
+  - title: "Détail du Bracelet"
+    image: https://placehold.co/500x500/png?text=Detail+Bracelet
 variations:
-  - color: "Yellow Gold"
-    variant-price: "850€"
-    variant-images:
-      - title: "Yellow Gold Finish"
-        image: "/images/gold-bracelet/variation/yellow.jpg"
-  - color: "Rose Gold"
-    variant-price: "870€"
-    variant-images:
-      - title: "Rose Gold Finish"
-        image: "/images/gold-bracelet/variation/rose.jpg"
+  - color: "Or Jaune"
+    price: "850€"
+    images:
+      - title: "Finition Or Jaune"
+        image: https://placehold.co/500x500/png?text=Or+Jaune
+  - color: "Or Rose"
+    price: "870€"
+    images:
+      - title: "Finition Or Rose"
+        image: https://placehold.co/500x500/png?text=Or+Rose
 ---
 
-# Luxurious Gold Bracelet
+# Bracelet en Or Luxueux
 
-Adorn yourself with this exquisite gold bracelet that perfectly blends classic charm with modern style.
+Parez-vous de ce bracelet en or exquis qui allie parfaitement le charme classique au style moderne.

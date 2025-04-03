@@ -5,23 +5,17 @@ const { data: home } = await useAsyncData(() =>
   queryCollection('content').path('/').first()
 );
 
-const { data: products } = await useAsyncData(() =>
-  queryCollection('products').all()
-);
+const products = await queryCollection('product').all()
+console.log(products);
 
-const items = ref<NavigationMenuItem[]>([
-  {
-    label: 'Jewelry',
-    icon: 'i-lucide-diamond',
-    to: '/products',
-    children: products.value.map((product) => ({
-      label: product.title,
-      icon: 'i-lucide-file-text',
-      description: product.meta.short_description,
-      to: `${product.slug}`
-    }))
-  },
-])
+const items = ref<NavigationMenuItem[]>(
+  products.map((product) => ({
+    label: product.title,
+    icon: 'i-lucide-file-text',
+    description: product.meta.short_description,
+    to: product.path,
+  }))
+);
 
 </script>
 
@@ -34,8 +28,8 @@ const items = ref<NavigationMenuItem[]>([
   >
     <!--An hamburger icon to open the menu-->
     <UButton
-      variant="text"
-      class="absolute top-4 left-4 z-10 text-white"
+      class="fixed top-4 left-4 z-10 text-white"
+      color="neutral"
 
       >
         <UIcon name="i-lucide-menu" class="size-5" />
@@ -50,4 +44,3 @@ const items = ref<NavigationMenuItem[]>([
     </template>
   </USlideover>
 </template>
-

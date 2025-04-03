@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/ui',
+    '@nuxt/fonts',
   ],
   css: ['assets/css/main.css'],
   content: {

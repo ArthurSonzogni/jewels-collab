@@ -1,34 +1,38 @@
 ---
-slug: silver-ring
-title: Elegant Silver Ring
-short-description: A sleek and elegant silver ring perfect for any occasion.
+slug: bague-argent
+title: Bague en Argent Élégante
+short-description: Une bague en argent lisse et élégante, parfaite pour toute occasion.
 long-description: >
-  This elegant silver ring is handcrafted from high-quality sterling silver and
-  designed to offer both durability and style. Its minimalist design makes it
-  perfect for both casual and formal wear.
+  Cette bague en argent élégante est fabriquée à la main en argent sterling de haute qualité et
+  conçue pour offrir à la fois durabilité et style. Son design minimaliste la rend
+  parfaite pour les tenues décontractées et formelles.
 price: 450€
-payment-link: https://stripe.com/checkout/silver-ring
-materials: Sterling Silver
-dimensions: "Ring size: 6-9, width: 2mm"
+materials: Argent Sterling
+dimensions: "Taille de la bague: 52-60 (6-9), largeur: 2mm"
 images:
-  - title: Main View
-    image: /images/1741874733772.jpeg
-  - title: Side View
-    image: /images/1743320217428.jpeg
-gallery:
-  - caption: Elegant on display
-    image: /images/1146614-main-6481f2be9152b.jpg
-  - caption: Detailed close-up
-    image: /images/images.jpeg
+  - title: Vue Principale
+    image: https://placehold.co/500x500/png?text=Vue+Principale
+  - title: Vue Latérale
+    image: https://placehold.co/500x500/png?text=Vue+Latérale
 variations:
-  - color: Polished Silver
-    variant-price: 450€
-    variant-images:
-      - title: Polished Silver View
-        image: /images/silver-polish-necklace-set.jpg
-  - color: Oxidized Silver
-    variant-price: 470€
-    variant-images:
-      - title: Oxidized Silver View
-        image: /images/images-1.jpeg
+  - color: Argent Poli
+    payment-link: https://checkout.stripe.com/c/pay/cs_live_a1tgK3bgNIkv9IDa6dF2JUBy9tWhit2ViXpZ60z5eAShUTXWe16s8Uk1Bj#fidkdWxOYHwnPyd1blppbHNgWjA0SlBWTlxGaXN2Q01%2FaEFES3ZdTmBKQFJ1aU5hZjJpd0lKTUNcNF1dSDFLUFw0ZDBLTFVoc0pfZEhrdWxKRjNBZGJ3PHR8cUhDV0R8RGRLQlNISj1SS3RhNTVcQFMzUWZmbicpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl
+    price: 450€
+    images:
+      - title: Vue Argent Poli
+        image: https://placehold.co/500x500/png?text=Argent+Poli
+      - title: Vue Argent Poli 2
+        image: https://placehold.co/500x500/png?text=Argent+Poli+2
+      - title: Vue Argent Poli 3
+        image: https://placehold.co/500x500/png?text=Argent+Poli+3
+  - color: Argent Oxydé
+    payment_link: https://checkout.stripe.com/c/pay/cs_live_a1tgK3bgNIkv9IDa6dF2JUBy9tWhit2ViXpZ60z5eAShUTXWe16s8Uk1Bj#fidkdWxOYHwnPyd1blppbHNgWjA0SlBWTlxGaXN2Q01%2FaEFES3ZdTmBKQFJ1aU5hZjJpd0lKTUNcNF1dSDFLUFw0ZDBLTFVoc0pfZEhrdWxKRjNBZGJ3PHR8cUhDV0R8RGRLQlNISj1SS3RhNTVcQFMzUWZmbicpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPyd2bGtiaWBabHFgaCcpJ2BrZGdpYFVpZGZgbWppYWB3dic%2FcXdwYHgl
+    price: 470€
+    images:
+      - title: Vue Argent Oxydé
+        image: https://placehold.co/500x500/png?text=Argent+Oxydé
+      - title: Vue Argent Oxydé 2
+        image: https://placehold.co/500x500/png?text=Argent+Oxydé+2
+      - title: Vue Argent Oxydé 3
+        image: https://placehold.co/500x500/png?text=Argent+Oxydé+3
 ---
