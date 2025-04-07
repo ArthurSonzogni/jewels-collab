@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-* {
-  font-family: "Gilda Display", sans-serif;
+html {
+  font-family: "Playfair", sans-serif;
 }
+
+.font-title {
+  font-family: "Cinzel", sans-serif;
+} 

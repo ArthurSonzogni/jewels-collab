@@ -1,22 +1,22 @@
 <template>
   <Navbar />
 
-  <div class="product-container">
-    <div class="product-images">
-      <img class="product-image"
+  <div class="main-container">
+    <div class="images">
+      <img class="image"
         v-for="(image, index) in product.meta.images"
         :key="index"
         :src="image.image"
       />
     </div>
 
-    <div class="product-details">
-      <div class="product-details-content">
-        <h1 class="product-title">{{ product.title }}</h1>
+    <div class="details">
+      <div class="details-content">
+        <h1 class="title font-title">{{ product.title }}</h1>
+        <p class="price">{{ product.meta.price }}</p>
         <hr />
-        <p class="product-description">{{ product.meta.long_description }}</p>
+        <p class="description">{{ product.meta.long_description }}</p>
         <hr />
-        <p class="product-price">{{ product.meta.price }}</p>
         <UButton
           variant="text"
           class="mt-4 p-3 text-lg font-bold font-sans w-full"
@@ -25,6 +25,60 @@
           <UIcon name="i-lucide-shopping-cart" class="size-5" />
           <span class="center w-full">Acheter</span>
         </UButton>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="container">
+    <h1 class="other-product title font-title">
+      Variations
+    </h1>
+    <div class="other-products-list">
+      <div
+        v-for="(variation, index) in product.meta.variations"
+        :key="index"
+        class="other-product"
+      >
+        <img class="other-product-image"
+          v-if="variation.images[0]"
+          :key="index"
+          :src="variation.images[0].image" />
+        <h2>{{ variation.color }}</h2>
+        <p class="price">{{ variation.price }}</p>
+
+        <UButton
+          variant="text"
+          class="mt-4 p-3 text-lg font-bold font-sans w-full"
+          :to="variation.payment_link"
+          >
+          <UIcon name="i-lucide-shopping-cart" class="size-5" />
+          <span class="center w-full">Acheter</span>
+        </UButton>
+      </div>
+    </div>
+  </div>
+
+
+  <hr />
+
+  <div class="container">
+    <h1 class="other-product title font-title">Vous pouvez aussi aimer</h1>
+    <div class="other-products-list">
+      <div
+        v-for="(product, index) in otherProducts"
+        :key="index"
+        class="other-product"
+      >
+        <NuxtLink :to="product.path"> 
+          <img class="other-product-image"
+            v-if="product.meta.images[0]"
+            :key="index"
+            :src="product.meta.images[0].image" />
+          <h2>{{ product.title }}</h2>
+          <p class="price">{{ product.meta.price }}</p>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -45,7 +99,12 @@ const { data: product } = await useAsyncData(async () => {
   return await queryCollection('product').path(`/product/${slug}`).first();
 });
 
-console.log(product.value);
+const { data: otherProducts } = await useAsyncData(() =>
+  queryCollection('product').all()
+);
+
+otherProducts.value = otherProducts.value.filter((p) => p.path !==
+  product.value.path);
 
 useSeoMeta({
   title: product.value.title,
@@ -53,72 +112,76 @@ useSeoMeta({
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
-.product-container {
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main-container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  align-content: stretch;
-  flex-direction: row;
   flex-wrap: nowrap;
-}
-@media (min-width: 1000px) {
-  .product-container {
+  width: 100vw;
+
+  @media (min-width: 1000px) {
     flex-direction: row;
   }
-}
-@media (max-width: 1000px) {
-  .product-container {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 }
 
-
-.product-images {
+.images {
   display: flex;
+  background-color: red;
+  justify-content: center;
   flex-direction: column;
   margin-right: 20px;
-}
-
-.product-image {
-  width: 100vw;
-  max-width: 1000px;
-  object-fit: cover;
-}
-
-.product-title {
-  font-weight: bold;
-}
-
-
-@media (min-width: 1000px) {
-  .product-details {
-    display: sticky;
-    max-width: 500px;
-    margin: 0;
-    padding: 30px;
+  @media (min-width: 1000px) {
+    width: 50vw;
   }
-  .product-details-content {
+  @media (max-width: 1000px) {
+    width: 100vw;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
+// The content stick to the top of the screen.
+.details {
+  @media (min-width: 1000px) {
+    width: 50vw;
+  }
+  @media (max-width: 1000px) {
+    width: 100vw;
+    position:sticky;
+    bottom: 0;
+    background-color: white;
+  }
+}
+
+.details-content {
+  margin: 20px;
+  @media (min-width: 1000px) {
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
   }
 }
-@media (max-width: 1000px) {
-  .product-details {
-    position: sticky;
-    background: white;
-    bottom: 0;
-    width: 100vw;
-    margin: 0;
-    padding: 30px;
-  }
-  .product-details-content {
-    top: 0;
-    width: 100vw;
-  }
+
+.title {
+  font-weight: bold;
 }
+
 
 pre {
   overflow: scroll;
@@ -127,6 +190,29 @@ pre {
 hr {
   margin: 20px 0;
   color: rgba(0, 0, 0, 0.1);
+}
+
+.other-product {
+  padding: 20px 0;
+}
+
+.other-products-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.other-product {
+  --width: 300px;
+  max-width: var(--width);
+  margin: 20px;
+}
+
+.other-product-image {
+  width: var(--width);
+  height: var(--width);
+  object-fit: cover;
 }
 
 </style>
