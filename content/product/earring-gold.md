@@ -12,4 +12,5 @@ images:
     image: /images/earring-gold-2.jpeg
   - title: placeholder
     image: /images/earring-gold-3.jpeg
+  - image: /images/model-gold.jpeg
 ---
