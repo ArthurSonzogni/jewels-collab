@@ -11,6 +11,6 @@ export default defineContentConfig({
       type: 'page',
       source: '**/*.md',
       exclude: ['product/*.md'],
-    }),
+    })
   }
 })

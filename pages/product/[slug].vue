@@ -15,51 +15,28 @@
         <h1 class="title font-title">{{ product.title }}</h1>
         <p class="price">{{ product.meta.price }}</p>
         <hr />
-        <p class="description">{{ product.meta.long_description }}</p>
+        <p class="description">{{ product.description }}</p>
         <hr />
+
         <UButton
-          variant="text"
-          class="mt-4 p-3 text-lg font-bold font-sans w-full"
-          :to="product.meta.payment_link"
-          >
-          <UIcon name="i-lucide-shopping-cart" class="size-5" />
-          <span class="center w-full">Acheter</span>
+          v-if="product.meta.payment_link"
+          :href="product.meta.payment_link"
+          class="mt-20"
+          color="neutral"
+          variant="soft"
+          size="xl"
+          icon="fa6-solid:basket-shopping"
+        >
+          Acheter
         </UButton>
       </div>
     </div>
   </div>
 
-  <hr />
-
-  <div class="container">
-    <h1 class="other-product title font-title">
-      Variations
-    </h1>
-    <div class="other-products-list">
-      <div
-        v-for="(variation, index) in product.meta.variations"
-        :key="index"
-        class="other-product"
-      >
-        <img class="other-product-image"
-          v-if="variation.images[0]"
-          :key="index"
-          :src="variation.images[0].image" />
-        <h2>{{ variation.color }}</h2>
-        <p class="price">{{ variation.price }}</p>
-
-        <UButton
-          variant="text"
-          class="mt-4 p-3 text-lg font-bold font-sans w-full"
-          :to="variation.payment_link"
-          >
-          <UIcon name="i-lucide-shopping-cart" class="size-5" />
-          <span class="center w-full">Acheter</span>
-        </UButton>
-      </div>
-    </div>
-  </div>
-
+  <ContentRenderer
+    :value="product"
+    class="m-20"
+  />
 
   <hr />
 
@@ -214,5 +191,6 @@ hr {
   height: var(--width);
   object-fit: cover;
 }
+
 
 </style>

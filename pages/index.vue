@@ -4,6 +4,7 @@ const { data: home } = await useAsyncData(() =>
 );
 
 const items = ref(home.value?.meta.videos);
+console.log(items.value);
 
 useSeoMeta({
   title: home.value?.title,
