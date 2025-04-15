@@ -1,6 +1,6 @@
 ---
 slug: earring-gold
-group: earring-gold
+group: earring
 variant: main
 title: placeholder
 description: placeholder
