@@ -8,5 +8,6 @@ price: "1000"
 images:
   - title: placeholder
     image: /images/necklace-silver.jpeg
-  - image: /images/necklace-silver-2.jpeg
+  - title: placeholder
+    image: /images/necklace-silver-2.jpeg
 ---
