@@ -10,4 +10,6 @@ images:
     image: /images/necklace-silver.jpeg
   - title: placeholder
     image: /images/necklace-silver-2.jpeg
+  - title: placeholder
+    image: /images/model-silver.jpeg
 ---
