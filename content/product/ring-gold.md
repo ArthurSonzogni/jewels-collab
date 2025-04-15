@@ -4,7 +4,7 @@ group: ring
 variant: gold
 title: placeholder
 description: placeholder
-price: placeholder
+price: "1000"
 images:
   - title: placeholder
     image: /images/ring-gold.jpeg
@@ -18,4 +18,5 @@ images:
     image: /images/ring-gold-5.jpeg
   - title: placeholder
     image: /images/ring-gold-6.jpeg
+  - image: /images/model-gold.jpeg
 ---
