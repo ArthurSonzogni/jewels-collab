@@ -12,4 +12,5 @@ images:
     image: /images/earring-silver-2.jpeg
   - title: placeholder
     image: /images/earring-silver-3.jpeg
+  - image: /images/model-earring-silver.jpeg
 ---
