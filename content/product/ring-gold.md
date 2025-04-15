@@ -18,5 +18,12 @@ images:
     image: /images/ring-gold-5.jpeg
   - title: placeholder
     image: /images/ring-gold-6.jpeg
-  - image: /images/model-gold.jpeg
+  - title: placeholder
+    image: /images/model-gold.jpeg
+  - title: placeholder
+    image: /images/model-gold-2.jpeg
+  - title: placeholder
+    image: /images/model-gold-3.jpeg
+  - title: placeholder
+    image: /images/model-gold-4.jpeg
 ---
