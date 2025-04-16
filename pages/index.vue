@@ -9,7 +9,6 @@
     <div class="absolute inset-0 flex flex-col items-center m-5">
       <!-- Menu -->
       <nav class="top-5 left-5 right-5 flex justify-center items-center gap-10">
-        <NuxtLink class="navLink" to="/" >Accueil</NuxtLink>
         <NuxtLink class="navLink" to="/collection" >Collection</NuxtLink>
         <NuxtLink class="navLink" to="/about" >A propos</NuxtLink>
       </nav>
