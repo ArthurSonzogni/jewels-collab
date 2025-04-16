@@ -6,7 +6,6 @@ const { data: home } = await useAsyncData(() =>
 );
 
 const products = await queryCollection('product').all()
-console.log(products);
 
 const items = ref<NavigationMenuItem[]>(
   products.map((product) => ({

@@ -9,7 +9,7 @@ export default defineContentConfig({
     }),
     content: defineCollection({
       type: 'page',
-      source: '**/*.md',
+      source: '*.md',
       exclude: ['product/*.md'],
     })
   }

@@ -31,6 +31,7 @@ content:
       - {name: title, label: Title, type: string}
       - {name: description, label: Short Description, type: string}
       - {name: price, label: Price, type: string}
+      - {name: payment_link, label: Payment Link, type: string}
       - name: images
         label: Images
         type: object

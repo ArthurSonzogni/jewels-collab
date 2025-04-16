@@ -16,5 +16,4 @@ body {
 .font-title {
   font-family: "Cinzel", sans-serif;
 } 
-
 </style>

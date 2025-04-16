@@ -6,7 +6,7 @@
       <img class="image"
         v-for="(image, index) in product.meta.images"
         :key="index"
-        :src="image.image"
+        :src="`${config.app.baseURL}${image.image}`"
       />
     </div>
 
@@ -21,7 +21,6 @@
         <UButton
           v-if="product.meta.payment_link"
           :href="product.meta.payment_link"
-          class="mt-20"
           color="neutral"
           variant="soft"
           size="xl"
@@ -29,14 +28,43 @@
         >
           Acheter
         </UButton>
+
+        <br />
       </div>
     </div>
   </div>
 
+  <div class="container">
   <ContentRenderer
+    class="markdown p-5"
     :value="product"
-    class="m-20"
-  />
+  >
+    coucou
+  </ContentRenderer>
+  </div>
+
+  <hr />
+
+  <div class="container">
+    <h1 class="other-product title font-title">Variantes</h1>
+    <div class="other-products-list">
+      <div
+        v-for="(product, index) in variations"
+        :key="index"
+        class="other-product"
+        >
+        <NuxtLink :to="product.path"> 
+        <img class="other-product-image"
+             v-if="product.meta.images[0]"
+             :key="index"
+             :src="`${config.app.baseURL}${product.meta.images[0].image}`"
+             />
+        <h2>{{ product.title }}</h2>
+        <p class="price">{{ product.meta.price }}</p>
+        </NuxtLink>
+      </div>
+    </div>
+  </div>
 
   <hr />
 
@@ -52,7 +80,8 @@
           <img class="other-product-image"
             v-if="product.meta.images[0]"
             :key="index"
-            :src="product.meta.images[0].image" />
+            :src="`${config.app.baseURL}${product.meta.images[0].image}`"
+          />
           <h2>{{ product.title }}</h2>
           <p class="price">{{ product.meta.price }}</p>
         </NuxtLink>
@@ -61,27 +90,27 @@
   </div>
 
 
-  <code class="mt-20">
-    <pre>
-    {{
-      JSON.stringify(product, null, 2)
-    }}
-    </pre>
-  </code>
 </template>
 
 <script setup lang="ts">
+
+const config = useRuntimeConfig();
+
 const slug = useRoute().params.slug;
 const { data: product } = await useAsyncData(async () => {
   return await queryCollection('product').path(`/product/${slug}`).first();
 });
 
-const { data: otherProducts } = await useAsyncData(() =>
+const { data: allProducts } = await useAsyncData(() =>
   queryCollection('product').all()
 );
 
-otherProducts.value = otherProducts.value.filter((p) => p.path !==
-  product.value.path);
+const variations = allProducts.value
+  .filter(p => p.meta.group == product.value.meta.group)
+  .filter(p => p.path != product.value.path);
+
+const otherProducts = allProducts.value
+  .filter(p => p.meta.group != product.value.meta.group)
 
 useSeoMeta({
   title: product.value.title,
