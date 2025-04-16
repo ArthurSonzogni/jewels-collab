@@ -1,7 +1,7 @@
 ---
 slug: earring-silver
 group: earring
-variant: silver
+collection: silver
 title: Raffinées Boucles d'Oreilles en Argent Sterling
 description: Illuminez votre visage avec ces raffinées boucles d'oreilles en argent sterling. Leur design délicat et l'éclat subtil de l'argent en font un accessoire polyvalent, idéal pour ajouter une touche d'élégance discrète à toutes vos occasions. Confectionnées avec soin, elles allient style et confort.
 price: "1000€"

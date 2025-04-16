@@ -20,17 +20,10 @@
     </div>
     <NuxtLink to="/product/ring-gold" class="link-1">
     </NuxtLink>
-    <NuxtLink to="/product/ring-gold" class="link-2">
+    <NuxtLink to="/product/earring-gold" class="link-2">
     </NuxtLink>
   </div>
 </template>
-
-<script>
-
-export default {
-  name: 'HomePage',
-}
-</script>
 
 <style scoped lang="scss">
 
@@ -50,7 +43,7 @@ nav {
   background-image: url('/images/background-gold.png');
   background-size: contain;
   background-position: center;
-  height: 100vh;
+  height: 100lvh;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -58,7 +51,7 @@ nav {
   background-image: url('/images/background-gold.png');
   background-size: contain;
   background-position: center;
-  height: 100vh;
+  height: 100lvh;
   background-attachment: fixed;
   filter: blur(32px)
 }
@@ -85,16 +78,16 @@ nav {
 
   position:absolute;
 
-  height: 26vh;
-  width: 26vh;
-  top: 60vh;
-  left: calc(50vw - 25vh);
+  height: 26lvh;
+  width: 26lvh;
+  top: 60lvh;
+  left: calc(50lvw - 25lvh);
 
   @media (max-aspect-ratio: 1024/1792) {
-    width:30vw;
-    height:30vw;
-    top: calc(50vh + 15vw);
-    left: 18vw;
+    width:30lvw;
+    height:30lvw;
+    top: calc(50lvh + 15lvw);
+    left: 18lvw;
   }
 
 }
@@ -108,16 +101,16 @@ nav {
     background-color: rgba(255, 255, 255, 0.1);
   }
 
-  height: 26vh;
-  width: 26vh;
-  top: 63vh;
-  left: calc(50vw + 1vh);
+  height: 26lvh;
+  width: 26lvh;
+  top: 63lvh;
+  left: calc(50lvw + 1lvh);
 
   @media (max-aspect-ratio: 1024/1792) {
-    width:30vw;
-    height:30vw;
-    top: calc(50vh + 20vw);
-    left: 52vw;
+    width:30lvw;
+    height:30lvw;
+    top: calc(50lvh + 20lvw);
+    left: 52lvw;
   }
 }
 

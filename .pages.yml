@@ -27,7 +27,7 @@ content:
     fields:
       - {name: slug, label: Slug, type: string}
       - {name: group, label: Group, type: string}
-      - {name: variant, label: Variant, type: string}
+      - {name: collection, label: Collection, type:string}
       - {name: title, label: Title, type: string}
       - {name: description, label: Short Description, type: string}
       - {name: price, label: Price, type: string}

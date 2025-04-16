@@ -14,8 +14,10 @@
       <div class="details-content">
         <h1 class="title font-title">{{ product.title }}</h1>
         <p class="price">{{ product.meta.price }}</p>
-        <hr />
-        <p class="description">{{ product.description }}</p>
+        <div class="description">
+          <hr />
+          <p>{{ product.description }}</p>
+        </div>
         <hr />
 
         <UButton
@@ -35,60 +37,42 @@
   </div>
 
   <div class="container">
-  <ContentRenderer
-    class="markdown p-5"
-    :value="product"
-  >
-    coucou
-  </ContentRenderer>
-  </div>
-
-  <hr />
-
-  <div class="container">
-    <h1 class="other-product title font-title">Variantes</h1>
-    <div class="other-products-list">
-      <div
-        v-for="(product, index) in variations"
-        :key="index"
-        class="other-product"
-        >
-        <NuxtLink :to="product.path"> 
-        <img class="other-product-image"
-             v-if="product.meta.images[0]"
-             :key="index"
-             :src="`${config.app.baseURL}${product.meta.images[0].image}`"
-             />
-        <h2>{{ product.title }}</h2>
-        <p class="price">{{ product.meta.price }}</p>
-        </NuxtLink>
-      </div>
-    </div>
-  </div>
-
-  <hr />
-
-  <div class="container">
-    <h1 class="other-product title font-title">Vous pouvez aussi aimer</h1>
-    <div class="other-products-list">
-      <div
-        v-for="(product, index) in otherProducts"
-        :key="index"
-        class="other-product"
+    <ContentRenderer
+      class="markdown p-5"
+      :value="product"
       >
-        <NuxtLink :to="product.path"> 
-          <img class="other-product-image"
-            v-if="product.meta.images[0]"
-            :key="index"
-            :src="`${config.app.baseURL}${product.meta.images[0].image}`"
-          />
+    </ContentRenderer>
+  </div>
+
+  <template v-for="[title, products] in [
+    ['Collection', collection],
+    ['Variations', variations],
+    ['Vous pouvez aussi aimer', otherProducts]
+    ].filter(([_, products]) => products.length > 0)
+  ">
+    <hr />
+
+    <div class="container">
+      <h1 class="other-product title font-title">{{title}}</h1>
+      <div class="other-products-list">
+        <div
+          v-for="(product, index) in products"
+          :key="index"
+          class="other-product"
+          >
+          <NuxtLink :to="product.path"> 
+          <img class="miniature"
+               v-if="product.meta.images[0]"
+               :key="index"
+               :src="`${config.app.baseURL}${product.meta.images[0].image}`"
+               />
           <h2>{{ product.title }}</h2>
           <p class="price">{{ product.meta.price }}</p>
-        </NuxtLink>
+          </NuxtLink>
+        </div>
       </div>
     </div>
-  </div>
-
+  </template>
 
 </template>
 
@@ -109,8 +93,12 @@ const variations = allProducts.value
   .filter(p => p.meta.group == product.value.meta.group)
   .filter(p => p.path != product.value.path);
 
+const collection = allProducts.value
+  .filter(p => p.meta.collection == product.value.meta.collection)
+
 const otherProducts = allProducts.value
   .filter(p => p.meta.group != product.value.meta.group)
+  .filter(p => p.meta.collection != product.value.meta.collection)
 
 useSeoMeta({
   title: product.value.title,
@@ -136,10 +124,10 @@ html {
   flex-wrap: nowrap;
   width: 100vw;
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     flex-direction: row;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     flex-direction: column;
   }
 }
@@ -150,10 +138,10 @@ html {
   justify-content: center;
   flex-direction: column;
   margin-right: 20px;
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     width: 50vw;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     width: 100vw;
   }
 }
@@ -164,10 +152,10 @@ html {
 
 // The content stick to the top of the screen.
 .details {
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     width: 50vw;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     width: 100vw;
     position:sticky;
     bottom: 0;
@@ -177,10 +165,13 @@ html {
 
 .details-content {
   margin: 20px;
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
+  }
+  @media (max-width: 800px) {
+    text-align: center;
   }
 }
 
@@ -215,11 +206,16 @@ hr {
   margin: 20px;
 }
 
-.other-product-image {
+.miniature {
   width: var(--width);
   height: var(--width);
   object-fit: cover;
 }
 
+.description {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
 
 </style>

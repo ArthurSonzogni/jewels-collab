@@ -1,7 +1,7 @@
 ---
 slug: ring-gold
 group: ring
-variant: gold
+collection: gold
 title: Élégante Bague en Or Fin
 description: Ornez votre main d'une touche de sophistication intemporelle avec cette élégante bague en or fin. Son design délicat et l'éclat chaleureux de l'or en font un bijou polyvalent, parfait pour compléter votre style au quotidien ou pour ajouter une note précieuse à vos occasions spéciales.
 price: "1000€"

@@ -1,7 +1,7 @@
 ---
 slug: earring-gold
 group: earring
-variant: main
+collection: gold
 title: Exquises Boucles d'Oreilles en Or Pur
 description: Sublimez votre allure avec ces exquises boucles d'oreilles en or pur. Leur éclat intemporel et leur design élégant en font un bijou d'exception, parfait pour les occasions spéciales et pour ajouter une touche de luxe à votre quotidien. Méticuleusement travaillées, elles témoignent d'un savoir-faire artisanal de qualité supérieure.
 price: "1000€"
