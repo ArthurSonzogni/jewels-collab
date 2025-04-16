@@ -28,7 +28,7 @@ export default defineNuxtConfig({
       }
     },
   },
-  ui {
+  ui: {
     colorMode: false,
   },
 })
