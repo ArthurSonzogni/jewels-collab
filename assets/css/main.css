@@ -109,5 +109,144 @@ html {
     }
   }
 
+
+  .about {
+    font-family: "Playfair", sans-serif;
+    color: #1a1a1a;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+
+    h1, h2, h3 {
+      font-weight: 700;
+      line-height: 1.2;
+      color: #111;
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 1.5rem 0;
+    }
+
+    a {
+      text-decoration: none;
+      text-underline-offset: 3px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #bfa76f;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+      color: #000;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    blockquote {
+      border-left: 4px solid #e6e6e6;
+      padding-left: 1.25rem;
+      font-style: italic;
+      color: #555;
+      margin: 2rem 0;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    ul li::marker {
+      color: #999;
+    }
+
+    ol li::marker {
+      color: #7f5af0;
+    }
+
+    code {
+      background-color: #f9f9f9;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+      font-size: 0.95em;
+      font-family: monospace;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 3rem 0;
+    }
+
+    img {
+      display: block;
+      margin: 2rem auto;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      max-width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      font-size: 0.875rem;
+      color: #666;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+
+      th, td {
+        border: 1px solid #e2e2e2;
+        padding: 0.75rem 1rem;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f8f8f8;
+        font-weight: 600;
+      }
+    }
+
+    // Optional: drop cap on first paragraph
+    p:first-of-type::first-letter {
+      float: left;
+      font-size: 3.2rem;
+      line-height: 1;
+      margin-right: 0.15em;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+  }
+
 }
 

@@ -20,8 +20,6 @@ const items = ref<NavigationMenuItem[]>(
 <template>
 
   <USlideover
-    :title="home.title"
-    description="description"
     side="left"
     portal=true
   >
@@ -34,26 +32,33 @@ const items = ref<NavigationMenuItem[]>(
         <UIcon name="i-lucide-menu" class="size-5" />
     </UButton>
 
-    <template #header>
-      <div class="flex flex-col items-center justify-center h-full">
-        <NuxtLink :to="home.path" class="flex items-center">
-          <h1 class="text-3xl font-bold text-center">
-            {{ home.title }}
-          </h1>
-        </NuxtLink>
-      </div>
-    </template>
-
     <template #body>
-      <p>
-        {{ home.description }}
-      </p>
+
+
+      <hr/>
+      <strong>
+        <NuxtLink to="/"  class="flex items-center">
+          Accueil
+        </NuxtLink>
+      </strong>
+
+      <hr/>
+      <strong>
+        <NuxtLink to="/about"  class="flex items-center">
+          A propos
+        </NuxtLink>
+      </strong>
+
+      <hr/>
+      <strong> Collection </strong>
+      <hr/>
 
       <UNavigationMenu
         :items="items"
         class="w-full justify-center"
         orientation="vertical"
       />
+      <hr/>
     </template>
   </USlideover>
 </template>
