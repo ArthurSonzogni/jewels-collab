@@ -1,55 +1,56 @@
 <template>
-  <Navbar />
+  <div>
+    <Navbar />
 
-  <div class="main-container">
-    <div class="images">
-      <img class="image"
-        v-for="(image, index) in product.meta.images"
-        :key="index"
-        :src="`${config.app.baseURL}${image.image}`"
-      />
-    </div>
+    <div class="main-container">
+      <div class="images">
+        <img class="image"
+             v-for="(image, index) in product.meta.images"
+             :key="index"
+             :src="`${config.app.baseURL}${image.image}`"
+             />
+      </div>
 
-    <div class="details">
-      <div class="details-content">
-        <h1 class="title font-title">{{ product.title }}</h1>
-        <p class="price">{{ product.meta.price }}</p>
-        <div class="description">
+      <div class="details">
+        <div class="details-content">
+          <h1 class="title font-title">{{ product.title }}</h1>
+          <p class="price">{{ product.meta.price }}</p>
+          <div class="description">
+            <hr />
+            <p>{{ product.description }}</p>
+          </div>
           <hr />
-          <p>{{ product.description }}</p>
+
+          <UButton
+            v-if="product.meta.payment_link"
+            :href="product.meta.payment_link"
+            color="neutral"
+            variant="soft"
+            size="xl"
+            icon="fa6-solid:basket-shopping"
+            >
+            Acheter
+          </UButton>
+
+          <br />
         </div>
-        <hr />
-
-        <UButton
-          v-if="product.meta.payment_link"
-          :href="product.meta.payment_link"
-          color="neutral"
-          variant="soft"
-          size="xl"
-          icon="fa6-solid:basket-shopping"
-        >
-          Acheter
-        </UButton>
-
-        <br />
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <ContentRenderer
-      class="markdown p-5"
-      :value="product"
-      >
-    </ContentRenderer>
-  </div>
+    <div class="container">
+      <ContentRenderer
+        class="markdown p-5"
+        :value="product"
+        >
+      </ContentRenderer>
+    </div>
 
-  <template v-for="[title, products] in [
+    <template v-for="[title, products] in [
     ['Collection', collection],
     ['Variations', variations],
     ['Vous pouvez aussi aimer', otherProducts]
     ].filter(([_, products]) => products.length > 0)
-  ">
+    ">
     <hr />
 
     <div class="container">
@@ -61,18 +62,20 @@
           class="other-product"
           >
           <NuxtLink :to="product.path"> 
-          <img class="miniature"
-               v-if="product.meta.images[0]"
-               :key="index"
-               :src="`${config.app.baseURL}${product.meta.images[0].image}`"
-               />
-          <h2>{{ product.title }}</h2>
-          <p class="price">{{ product.meta.price }}</p>
+            <img class="miniature"
+                 v-if="product.meta.images[0]"
+                 :key="index"
+                 :src="`${config.app.baseURL}${product.meta.images[0].image}`"
+                 />
+            <h2>{{ product.title }}</h2>
+            <p class="price">{{ product.meta.price }}</p>
           </NuxtLink>
         </div>
       </div>
     </div>
-  </template>
+    </template>
+
+  </div>
 
 </template>
 

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: '/jewels-collab/',
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
   compatibilityDate: '2025-01-01',
   devtools: { enabled: true },

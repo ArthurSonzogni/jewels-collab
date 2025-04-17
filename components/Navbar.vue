@@ -21,7 +21,6 @@ const items = ref<NavigationMenuItem[]>(
 
   <USlideover
     side="left"
-    portal=true
   >
     <!--An hamburger icon to open the menu-->
     <UButton
