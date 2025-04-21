@@ -28,6 +28,9 @@ export default defineNuxtConfig({
         }
       }
     },
+    preview: {
+      api: 'https://api.nuxt.studio',
+    },
   },
   ui: {
     colorMode: false,
