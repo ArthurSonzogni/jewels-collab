@@ -72,8 +72,8 @@ const prevVideo = () => {
 
 .video-container {
   position: relative;
-  width: 100lvw;
-  height: 100lvh;
+  width: 100svw;
+  height: 100svh;
   overflow: hidden;
 }
 

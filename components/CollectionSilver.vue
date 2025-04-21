@@ -37,7 +37,7 @@ nav {
   width: 100%;
   text-align: center;
   @media (max-aspect-ratio: 1024/1536) {
-    top:calc(50lvh - 70lvw);
+    top:calc(50svh - 70svw);
   }
 }
 
@@ -48,7 +48,7 @@ nav {
   background-image: url('/images/background-silver.png');
   background-size: contain;
   background-position: center;
-  height: 100lvh;
+  height: 100svh;
   background-repeat: no-repeat;
 
 }
@@ -81,57 +81,57 @@ nav {
 }
 
 .link-1 {
-  height: 26lvh;
-  width: 26lvh;
-  top: 20lvh;
-  left: calc(50lvw + 1lvh);
+  height: 26svh;
+  width: 26svh;
+  top: 20svh;
+  left: calc(50svw + 1svh);
   @media (max-aspect-ratio: 1024/1536) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh - 40lvw);
-    left: 56lvw;
+    width:30svw;
+    height:30svw;
+    top: calc(50svh - 40svw);
+    left: 56svw;
   }
 }
 
 .link-2 {
-  height: 26lvh;
-  width: 26lvh;
-  top: 43lvh;
-  left: calc(50lvw - 28lvh);
+  height: 26svh;
+  width: 26svh;
+  top: 43svh;
+  left: calc(50svw - 28svh);
 
   @media (max-aspect-ratio: 1024/1536) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh - 7lvw);
-    left: 12lvw;
+    width:30svw;
+    height:30svw;
+    top: calc(50svh - 7svw);
+    left: 12svw;
   }
 }
 
 .link-3 {
-  height: 26lvh;
-  width: 26lvh;
-  top: 53lvh;
-  left: calc(50lvw + 1lvh);
+  height: 26svh;
+  width: 26svh;
+  top: 53svh;
+  left: calc(50svw + 1svh);
 
   @media (max-aspect-ratio: 1024/1536) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh + 10lvw);
-    left: 55lvw;
+    width:30svw;
+    height:30svw;
+    top: calc(50svh + 10svw);
+    left: 55svw;
   }
 }
 
 .link-4 {
-  height: 26lvh;
-  width: 26lvh;
-  top: 66lvh;
-  left: calc(50lvw - 20lvh);
+  height: 26svh;
+  width: 26svh;
+  top: 66svh;
+  left: calc(50svw - 20svh);
 
   @media (max-aspect-ratio: 1024/1536) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh + 25lvw);
-    left: 24lvw;
+    width:30svw;
+    height:30svw;
+    top: calc(50svh + 25svw);
+    left: 24svw;
   }
 }
 

@@ -35,7 +35,7 @@ nav {
   width: 100%;
   text-align: center;
   @media (max-aspect-ratio: 1024/1536) {
-    top:calc(50lvh - 70lvw);
+    top:calc(50svh - 70svw);
   }
 }
 
@@ -46,7 +46,7 @@ nav {
   background-image: url('/images/background-gold.png');
   background-size: contain;
   background-position: center;
-  height: 100lvh;
+  height: 100svh;
   background-repeat: no-repeat;
 
 }
@@ -79,29 +79,29 @@ nav {
 }
 
 .link-1 {
-  height: 26lvh;
-  width: 26lvh;
-  top: 60lvh;
-  left: calc(50lvw - 25lvh);
+  height: 26svh;
+  width: 26svh;
+  top: 60svh;
+  left: calc(50svw - 25svh);
   @media (max-aspect-ratio: 1024/1536) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh + 15lvw);
-    left: 18lvw;
+    width:30svw;
+    height:30svw;
+    top: calc(50svh + 15svw);
+    left: 18svw;
   }
 }
 
 .link-2 {
-  height: 26lvh;
-  width: 26lvh;
-  top: 63lvh;
-  left: calc(50lvw + 1lvh);
+  height: 26svh;
+  width: 26svh;
+  top: 63svh;
+  left: calc(50svw + 1svh);
 
   @media (max-aspect-ratio: 1024/1536) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh + 22lvw);
-    left: 52lvw;
+    width:30svw;
+    height:30svw;
+    top: calc(50svh + 22svw);
+    left: 52svw;
   }
 }
 
