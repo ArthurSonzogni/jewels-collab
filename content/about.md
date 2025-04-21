@@ -26,8 +26,7 @@ Dans un monde où l’éphémère prend souvent le pas sur le durable, Vincent A
 
 ---
 
-**"Chaque bijou raconte une histoire. La vôtre."**  
-*Vincent Arnould*
+**"Chaque bijou raconte une histoire. La vôtre."**:br*Vincent Arnould*
 
 ---
 
@@ -37,4 +36,3 @@ Dans un monde où l’éphémère prend souvent le pas sur le durable, Vincent A
 - **Savoir-faire exceptionnel** : Un engagement envers l’excellence et la perfection dans chaque création.
 - **Personnalisation totale** : Des bijoux conçus spécifiquement pour vous, adaptés à vos envies et à vos émotions.
 - **Matériaux nobles et durables** : Des pierres précieuses, de l'or et du platine soigneusement sélectionnés pour leur qualité.
-
