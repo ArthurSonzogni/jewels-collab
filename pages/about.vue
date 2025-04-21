@@ -1,6 +1,5 @@
 <template>
   <div class="max-w-4xl mx-auto p-6">
-    <Navbar />
     <ContentRenderer :value="document"  class="about p-5" />
 
     <!-- Button to scroll back to the top -->

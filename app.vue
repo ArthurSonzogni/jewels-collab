@@ -1,6 +1,9 @@
  <template>
    <UApp>
-    <NuxtPage />
+    <Navbar />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </UApp>
 </template>
 
@@ -17,12 +20,19 @@ body {
   font-family: "Cinzel", sans-serif;
 } 
 
-.page-enter-active,
-.page-leave-active,
+.page-enter-active {
+  transition: all 0.3s;
+}
+
+.page-leave-active {
+  transition: all 0.3s;
+}
+
 .page-enter-from {
   opacity: 0;
   transform: translate(50px, 0);
 }
+
 .page-leave-to {
   opacity: 0;
   transform: translate(-50px, 0);

@@ -1,117 +1,116 @@
+<script setup lang="ts">
+const { data: home } = await useAsyncData(() =>
+  queryCollection('content').path('/').first()
+);
+
+const items = ref(home.value?.meta.videos);
+console.log(items.value);
+
+useSeoMeta({
+  title: home.value?.title,
+  description: home.value?.description
+})
+
+const currentVideo = ref(1);
+
+const nextVideo = () => {
+  currentVideo.value = (currentVideo.value + 1) % items.length;
+};
+
+const prevVideo = () => {
+  currentVideo.value = (currentVideo.value - 1 + items.length) % items.length;
+};
+
+
+</script>
+
 <template>
-  <div class="relative h-screen bg-black text-white">
-    <Navbar />
 
-    <div class="absolute inset-0 backgroundImageBlur"</div>
-    <div class="absolute inset-0 backgroundImage"</div>
-    
-    <!-- Contenu superposé -->
-    <div class="absolute inset-0 flex flex-col items-center m-5">
-      <!-- Menu -->
-      <nav class="top-5 left-5 right-5 flex justify-center items-center gap-10">
-        <NuxtLink class="navLink" to="/collection" >Collection</NuxtLink>
-        <NuxtLink class="navLink" to="/about" >A propos</NuxtLink>
-      </nav>
-
-      <!-- Titre -->
-      <h1 class="title">Jewels Collab</h1>
-
+  <div class="scroll-snap-y overflow-hidden">
+  <UCarousel
+    v-slot="{ item }"
+    orientation="horizontal"
+    :items="items"
+    dots
+    :autoplay="{ delay: 3000 }"
+  >
+    <div class="video-title">
+      {{ item.title }}
     </div>
-    <NuxtLink to="/product/ring-gold" class="link-1">
-    </NuxtLink>
-    <NuxtLink to="/product/earring-gold" class="link-2">
-    </NuxtLink>
+    <div class="video-container">
+      <video
+        autoplay
+        preload="auto"
+        playsinline
+        webkit-playsinline
+        autoscroll
+        loop
+        muted
+        :src="item.landscape"
+        class="background-video"
+      >
+        <source :src="item.portrait" media="(orientation: portrait)" />
+        <source :src="item.landscape" media="(orientation: landscape)" />
+      </video>
+    </div>
+  </UCarousel>
+  
+  <CollectionGold />
+
   </div>
+
 </template>
 
-<style scoped lang="scss">
-
-nav {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-family: "Luxurious serifs", sans-serif;
-  color: rgba(128, 128, 128, 0.8);
-  :hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition: color 0.3s ease;
-  }
+<style scoped>
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-.backgroundImage {
-  background-image: url('/images/background-gold.png');
-  background-size: contain;
-  background-position: center;
-  height: 100lvh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.backgroundImageBlur {
-  background-image: url('/images/background-gold.png');
-  background-size: contain;
-  background-position: center;
-  height: 100lvh;
-  background-attachment: fixed;
-  filter: blur(32px)
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow: hidden;
 }
 
-.title {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 4rem;
+.video-title {
+  bottom: 0;
+  color: white;
+  font-size: 24px;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-  @media (max-width: 768px) {
-    font-size: 3rem;
-  }
-}
-
-// Transparent link that should fit the position of the jewel in the background.
-.link-1 {
-  display: block;
-  border-radius: 50%;
-  transition: background-color 1.0s ease;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
+  margin-top: 20px;
   position:absolute;
-
-  height: 26lvh;
-  width: 26lvh;
-  top: 60lvh;
-  left: calc(50lvw - 25lvh);
-
-  @media (max-aspect-ratio: 1024/1792) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh + 15lvw);
-    left: 18lvw;
-  }
-
+  text-align: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  z-index: 1;
 }
 
-.link-2 {
-  position:absolute;
-
-  border-radius: 50%;
-  transition: background-color 1.0s ease;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-
-  height: 26lvh;
-  width: 26lvh;
-  top: 63lvh;
-  left: calc(50lvw + 1lvh);
-
-  @media (max-aspect-ratio: 1024/1792) {
-    width:30lvw;
-    height:30lvw;
-    top: calc(50lvh + 20lvw);
-    left: 52lvw;
-  }
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-btn {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 </style>

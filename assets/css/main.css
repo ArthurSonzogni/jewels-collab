@@ -9,6 +9,10 @@ html {
   font-family: "Cinzel", sans-serif;
 } 
 
+:root {
+  --ui-primary: black;
+}
+
 @layer base {
   .markdown {
     font-size: 1rem;

@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Navbar />
-
     <div class="main-container">
       <div class="images">
         <img class="image"
@@ -13,26 +11,41 @@
 
       <div class="details">
         <div class="details-content">
-          <h1 class="title font-title">{{ product.title }}</h1>
-          <p class="price">{{ product.meta.price }}</p>
-          <div class="description">
+          <div class="small_screen">
+            <div>
+              <span class="title mr-6">{{ product.title }}</span>
+              <span class="price">{{ product.meta.price }}</span>
+            </div>
+            <UButton
+              v-if="product.meta.payment_link"
+              :href="product.meta.payment_link"
+              icon="fa6-solid:basket-shopping"
+              color="primary"
+              variant="soft"
+              class="mt-4"
+              >
+              Acheter
+            </UButton>
+          </div>
+
+          <div class="large_screen">
+            <h1 class="title font-title mr-6">{{ product.title }}</h1>
+            <span class="price">{{ product.meta.price }}</span>
             <hr />
             <p>{{ product.description }}</p>
+            <hr />
+
+            <UButton
+              v-if="product.meta.payment_link"
+              :href="product.meta.payment_link"
+              color="neutral"
+              variant="soft"
+              size="xl"
+              icon="fa6-solid:basket-shopping"
+              >
+              Acheter
+            </UButton>
           </div>
-          <hr />
-
-          <UButton
-            v-if="product.meta.payment_link"
-            :href="product.meta.payment_link"
-            color="neutral"
-            variant="soft"
-            size="xl"
-            icon="fa6-solid:basket-shopping"
-            >
-            Acheter
-          </UButton>
-
-          <br />
         </div>
       </div>
     </div>
@@ -74,9 +87,7 @@
       </div>
     </div>
     </template>
-
   </div>
-
 </template>
 
 <script setup lang="ts">
@@ -116,6 +127,8 @@ html {
   box-sizing: border-box;
 }
 
+
+
 .container {
   margin: 0 auto;
 }
@@ -125,7 +138,6 @@ html {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: nowrap;
-  width: 100vw;
 
   @media (min-width: 800px) {
     flex-direction: row;
@@ -140,7 +152,6 @@ html {
   background-color: red;
   justify-content: center;
   flex-direction: column;
-  margin-right: 20px;
   @media (min-width: 800px) {
     width: 50vw;
   }
@@ -151,6 +162,10 @@ html {
 
 .image {
   width: 100%;
+
+  @media (max-width: 800px) {
+    width: 100vw;
+  }
 }
 
 // The content stick to the top of the screen.
@@ -172,9 +187,6 @@ html {
     position: sticky;
     top: 50%;
     transform: translateY(-50%);
-  }
-  @media (max-width: 800px) {
-    text-align: center;
   }
 }
 
@@ -215,8 +227,14 @@ hr {
   object-fit: cover;
 }
 
-.description {
+.large_screen{
   @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.small_screen{
+  @media (min-width: 800px) {
     display: none;
   }
 }
