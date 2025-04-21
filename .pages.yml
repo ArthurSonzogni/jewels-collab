@@ -40,3 +40,9 @@ content:
           - {name: title, label: Title, type: string}
           - {name: image, label: Image, type: image}
 
+  - name: about
+    label: About
+    type: file
+    path: content/about.md
+    filename: about.md
+
