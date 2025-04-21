@@ -3,14 +3,12 @@
     <div class="backgroundImage backgroundImageBlur"</div>
     <div class="backgroundImage"</div>
     
-    <div class="absolute inset-0 flex flex-col items-center m-5">
-      <h1 class="title">Collection Or</h1>
-    </div>
+    <h1 class="title">Collection Argent</h1>
 
-    <NuxtLink to="/product/ring-gold" class="link-1">
-    </NuxtLink>
-    <NuxtLink to="/product/earring-gold" class="link-2">
-    </NuxtLink>
+    <NuxtLink to="/product/necklace-silver" class="link link-1"/>
+    <NuxtLink to="/product/earring-silver" class="link link-2"/>
+    <NuxtLink to="/product/ring-silver" class="link link-3"/>
+    <NuxtLink to="/product/ring-silver" class="link link-4"/>
   </div>
 </template>
 
@@ -32,11 +30,22 @@ nav {
   position: relative;
 }
 
+
+.title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  @media (max-aspect-ratio: 1024/1536) {
+    top:calc(50lvh - 70lvw);
+  }
+}
+
 .backgroundImage {
   position: absolute;
   top: 0;
   width: 100%;
-  background-image: url('/images/background-gold.png');
+  background-image: url('/images/background-silver.png');
   background-size: contain;
   background-position: center;
   height: 100lvh;
@@ -45,7 +54,7 @@ nav {
 }
 
 .backgroundImageBlur {
-  filter: blur(32px);
+  filter: blur(10px);
   background-repeat: repeat;
 }
 
@@ -60,7 +69,7 @@ nav {
   }
 }
 
-.link-1, .link-2 {
+.link {
   display: block;
   border-radius: 50%;
   transition: all 1.0s ease;
@@ -74,27 +83,55 @@ nav {
 .link-1 {
   height: 26lvh;
   width: 26lvh;
-  top: 60lvh;
-  left: calc(50lvw - 25lvh);
-  @media (max-aspect-ratio: 1024/1792) {
+  top: 20lvh;
+  left: calc(50lvw + 1lvh);
+  @media (max-aspect-ratio: 1024/1536) {
     width:30lvw;
     height:30lvw;
-    top: calc(50lvh + 15lvw);
-    left: 18lvw;
+    top: calc(50lvh - 40lvw);
+    left: 56lvw;
   }
 }
 
 .link-2 {
   height: 26lvh;
   width: 26lvh;
-  top: 63lvh;
-  left: calc(50lvw + 1lvh);
+  top: 43lvh;
+  left: calc(50lvw - 28lvh);
 
-  @media (max-aspect-ratio: 1024/1792) {
+  @media (max-aspect-ratio: 1024/1536) {
     width:30lvw;
     height:30lvw;
-    top: calc(50lvh + 22lvw);
-    left: 52lvw;
+    top: calc(50lvh - 7lvw);
+    left: 12lvw;
+  }
+}
+
+.link-3 {
+  height: 26lvh;
+  width: 26lvh;
+  top: 53lvh;
+  left: calc(50lvw + 1lvh);
+
+  @media (max-aspect-ratio: 1024/1536) {
+    width:30lvw;
+    height:30lvw;
+    top: calc(50lvh + 10lvw);
+    left: 55lvw;
+  }
+}
+
+.link-4 {
+  height: 26lvh;
+  width: 26lvh;
+  top: 66lvh;
+  left: calc(50lvw - 20lvh);
+
+  @media (max-aspect-ratio: 1024/1536) {
+    width:30lvw;
+    height:30lvw;
+    top: calc(50lvh + 25lvw);
+    left: 24lvw;
   }
 }
 

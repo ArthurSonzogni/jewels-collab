@@ -26,7 +26,8 @@ const prevVideo = () => {
 
 <template>
 
-  <div class="scroll-snap-y overflow-hidden">
+  <div>
+  <SeeBelow />
   <UCarousel
     v-slot="{ item }"
     orientation="horizontal"
@@ -56,6 +57,7 @@ const prevVideo = () => {
   </UCarousel>
   
   <CollectionGold />
+  <CollectionSilver />
 
   </div>
 
@@ -70,8 +72,8 @@ const prevVideo = () => {
 
 .video-container {
   position: relative;
-  width: 100vw;
-  height: calc(100vh - 100px);
+  width: 100lvw;
+  height: 100lvh;
   overflow: hidden;
 }
 

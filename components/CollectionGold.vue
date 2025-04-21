@@ -3,14 +3,10 @@
     <div class="backgroundImage backgroundImageBlur"</div>
     <div class="backgroundImage"</div>
     
-    <div class="absolute inset-0 flex flex-col items-center m-5">
-      <h1 class="title">Collection Or</h1>
-    </div>
+    <h1 class="title">Collection Or</h1>
 
-    <NuxtLink to="/product/ring-gold" class="link-1">
-    </NuxtLink>
-    <NuxtLink to="/product/earring-gold" class="link-2">
-    </NuxtLink>
+    <NuxtLink to="/product/ring-gold" class="link link-1"/>
+    <NuxtLink to="/product/earring-gold" class="link link-2"/>
   </div>
 </template>
 
@@ -32,6 +28,17 @@ nav {
   position: relative;
 }
 
+
+.title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  @media (max-aspect-ratio: 1024/1536) {
+    top:calc(50lvh - 70lvw);
+  }
+}
+
 .backgroundImage {
   position: absolute;
   top: 0;
@@ -45,7 +52,7 @@ nav {
 }
 
 .backgroundImageBlur {
-  filter: blur(32px);
+  filter: blur(10px);
   background-repeat: repeat;
 }
 
@@ -60,7 +67,7 @@ nav {
   }
 }
 
-.link-1, .link-2 {
+.link {
   display: block;
   border-radius: 50%;
   transition: all 1.0s ease;
@@ -76,7 +83,7 @@ nav {
   width: 26lvh;
   top: 60lvh;
   left: calc(50lvw - 25lvh);
-  @media (max-aspect-ratio: 1024/1792) {
+  @media (max-aspect-ratio: 1024/1536) {
     width:30lvw;
     height:30lvw;
     top: calc(50lvh + 15lvw);
@@ -90,7 +97,7 @@ nav {
   top: 63lvh;
   left: calc(50lvw + 1lvh);
 
-  @media (max-aspect-ratio: 1024/1792) {
+  @media (max-aspect-ratio: 1024/1536) {
     width:30lvw;
     height:30lvw;
     top: calc(50lvh + 22lvw);
