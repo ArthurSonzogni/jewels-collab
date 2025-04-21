@@ -26,7 +26,7 @@ Dans un monde où l’éphémère prend souvent le pas sur le durable, Vincent A
 
 ---
 
-**"Chaque bijou raconte une histoire. La vôtre."**:br*Vincent Arnould*
+**"Chaque bijou raconte une histoire. La vôtre."**:br *Vincent Arnould*
 
 ---
 
