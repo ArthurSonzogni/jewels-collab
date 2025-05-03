@@ -2,7 +2,7 @@
 slug: ring-gold
 group: ring
 collection: gold
-title: Élégante Bague en Or Fin
+title: Bague athéna laiton galvanisé or
 description: Ornez votre main d'une touche de sophistication intemporelle avec
   cette élégante bague en or fin. Son design délicat et l'éclat chaleureux de
   l'or en font un bijou polyvalent, parfait pour compléter votre style au
