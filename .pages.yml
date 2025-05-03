@@ -19,6 +19,15 @@ content:
           - {name: portrait, label: Video Portrait, type: string}
           - {name: landscape, label: Video Landscape, type: string}
 
+  - name: collection
+    label: Collection
+    type: collection
+    filename: "{fields.slug}.md"
+    fields:
+      - {name: slug, label: Slug, type: string}
+      - {name: title, label: Title, type: string}
+      - {name: description, label: Short Description, type: string}
+
   - name: product
     label: Products
     type: collection
