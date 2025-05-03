@@ -22,6 +22,7 @@ content:
   - name: collection
     label: Collection
     type: collection
+    path: content/collection
     filename: "{fields.slug}.md"
     fields:
       - {name: slug, label: Slug, type: string}
