@@ -9,8 +9,6 @@ description: Ajoutez une touche d'élégance discrète à votre main avec cette
 price: 1000€
 payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
 images:
-  - title: Détail de la Bague en Argent Sterling
-    image: /images/ring-silver.jpeg
-  - title: Vue Rapprochée de l'Anneau en Argent Sterling
-    image: /images/ring-silver-2.jpeg
+  - image: /images/ring-silver.jpeg
+  - image: /images/ring-silver-2.jpeg
 ---

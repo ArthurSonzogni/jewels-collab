@@ -9,24 +9,14 @@ description: Ornez votre main d'une touche de sophistication intemporelle avec
 price: 1000€
 payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
 images:
-  - title: Détail de la Bague en Or Fin
-    image: /images/ring-gold.jpeg
-  - title: Vue Rapprochée de l'Anneau en Or Fin
-    image: /images/ring-gold-2.jpeg
-  - title: Profil Délicat de la Bague en Or Fin
-    image: /images/ring-gold-3.jpeg
-  - title: L'Éclat de l'Or Fin
-    image: /images/ring-gold-4.jpeg
-  - title: Texture Subtile de la Bague en Or Fin
-    image: /images/ring-gold-5.jpeg
-  - title: Finition Polie de la Bague en Or Fin
-    image: /images/ring-gold-6.jpeg
-  - title: La Bague en Or Fin Portée avec Élégance
-    image: /images/model-gold.jpeg
-  - title: Détail de la Bague en Or Fin sur une Main
-    image: /images/model-gold-2.jpeg
-  - title: La Bague en Or Fin Illuminant la Main
-    image: /images/model-gold-3.jpeg
-  - title: Association Élégante de la Bague en Or Fin avec d'Autres Bijoux
-    image: /images/model-gold-4.jpeg
+  - image: /images/ring-gold.jpeg
+  - image: /images/ring-gold-2.jpeg
+  - image: /images/ring-gold-3.jpeg
+  - image: /images/ring-gold-4.jpeg
+  - image: /images/ring-gold-5.jpeg
+  - image: /images/ring-gold-6.jpeg
+  - image: /images/model-gold.jpeg
+  - image: /images/model-gold-2.jpeg
+  - image: /images/model-gold-3.jpeg
+  - image: /images/model-gold-4.jpeg
 ---

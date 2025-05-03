@@ -10,12 +10,8 @@ description: Illuminez votre visage avec ces raffinées boucles d'oreilles en
 price: 1000€
 payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
 images:
-  - title: Détail des Boucles d'Oreilles en Argent
-    image: /images/earring-silver.jpeg
-  - title: Vue Rapprochée des Boucles d'Oreilles en Argent
-    image: /images/earring-silver-2.jpeg
-  - title: Jeu de Lumière sur les Boucles d'Oreilles en Argent
-    image: /images/earring-silver-3.jpeg
-  - title: Élégance Discrète des Boucles d'Oreilles en Argent Portées
-    image: /images/model-earring-silver.jpeg
+  - image: /images/earring-silver.jpeg
+  - image: /images/earring-silver-2.jpeg
+  - image: /images/earring-silver-3.jpeg
+  - image: /images/model-earring-silver.jpeg
 ---

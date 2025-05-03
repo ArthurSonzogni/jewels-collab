@@ -10,12 +10,8 @@ description: Sublimez votre allure avec ces exquises boucles d'oreilles en or
 price: 1000€
 payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
 images:
-  - title: Détail des Boucles d'Oreilles en Or
-    image: /images/earring-gold.jpeg
-  - title: Vue Rapprochée des Boucles d'Oreilles en Or
-    image: /images/earring-gold-2.jpeg
-  - title: Porté Élégant des Boucles d'Oreilles en Or
-    image: /images/earring-gold-3.jpeg
-  - title: Les Boucles d'Oreilles en Or Portées par un Modèle
-    image: /images/model-gold.jpeg
+  - image: /images/earring-gold.jpeg
+  - image: /images/earring-gold-2.jpeg
+  - image: /images/earring-gold-3.jpeg
+  - image: /images/model-gold.jpeg
 ---

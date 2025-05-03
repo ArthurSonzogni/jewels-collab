@@ -98,6 +98,18 @@ const { data: allProducts } = await useAsyncData(() =>
   queryCollection('product').all()
 );
 
+// Fetch all the collections and map the collection.slug to its collection.title
+const { data: collections_data } = await useAsyncData(() =>
+  queryCollection('collection').all()
+);
+
+const collection_titles = new Map();
+collections_data.value.forEach(collection => {
+  console.log(collection)
+  collection_titles.set(collection.meta.slug, collection.title);
+});
+console.log(collection_titles);
+
 // Fetch all products, and group by collection. Extract the collection from the
 // first product alone.
 
@@ -118,7 +130,7 @@ const collections_list = [
   ...Object.entries(collections)
     .filter(([title, products]) => products.length > 0)
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([title, products]) => [title, products])
+    .map(([title, products]) => [collection_titles.get(title), products])
 ]
 
 useSeoMeta({
