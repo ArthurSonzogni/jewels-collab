@@ -1,6 +1,5 @@
 ---
 slug: earring-colored
-group: earring
 collection: colored
 title: Élégantes Boucles d'Oreilles Éclat Coloré
 description: Rehaussez votre style avec ces élégantes boucles d'oreilles. Leur

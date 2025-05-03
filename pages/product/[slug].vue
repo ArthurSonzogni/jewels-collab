@@ -58,12 +58,7 @@
       </ContentRenderer>
     </div>
 
-    <template v-for="[title, products] in [
-    ['Collection', collection],
-    ['Variations', variations],
-    ['Vous pouvez aussi aimer', otherProducts]
-    ].filter(([_, products]) => products.length > 0)
-    ">
+    <template v-for="[title, products] in collections_list">
     <hr />
 
     <div class="container">
@@ -103,16 +98,28 @@ const { data: allProducts } = await useAsyncData(() =>
   queryCollection('product').all()
 );
 
-const variations = allProducts.value
-  .filter(p => p.meta.group == product.value.meta.group)
-  .filter(p => p.path != product.value.path);
+// Fetch all products, and group by collection. Extract the collection from the
+// first product alone.
 
-const collection = allProducts.value
-  .filter(p => p.meta.collection == product.value.meta.collection)
+const collections = {};
+allProducts.value.forEach(product => {
+  collections[product.meta.collection] ||= [];
+  collections[product.meta.collection].push(product);
+});
 
-const otherProducts = allProducts.value
-  .filter(p => p.meta.group != product.value.meta.group)
-  .filter(p => p.meta.collection != product.value.meta.collection)
+const collection_current = collections[product.value.meta.collection];
+delete collections[product.value.meta.collection];
+
+// Turn the [collection_current, collections...] into a list of [title, products]
+// where title is the collection name, and products is the list of products.
+
+const collections_list = [
+  [product.value.meta.collection, collection_current],
+  ...Object.entries(collections)
+    .filter(([title, products]) => products.length > 0)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([title, products]) => [title, products])
+]
 
 useSeoMeta({
   title: product.value.title,

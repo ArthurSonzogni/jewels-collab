@@ -1,6 +1,5 @@
 ---
 slug: earring-silver
-group: earring
 collection: silver
 title: Raffinées Boucles d'Oreilles en Argent Sterling
 description: Illuminez votre visage avec ces raffinées boucles d'oreilles en
