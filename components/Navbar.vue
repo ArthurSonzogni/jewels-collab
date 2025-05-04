@@ -10,19 +10,6 @@ const { data: home } = await useAsyncData(() =>
 
 const collections = await GetCollections();
 
-const menu = ref<HTMLElement | null>(null);
-
-// Hide the menu if scrolled.
-window.addEventListener('scroll', () => {
-  if (!menu.value) return;
-  if (window.scrollY > 0) {
-    menu.value.classList.add('hidden_menu');
-  } else {
-    menu.value.classList.remove('hidden_menu');
-    
-  }
-});
-
 </script>
 
 <template>
@@ -36,7 +23,7 @@ window.addEventListener('scroll', () => {
       class="fixed top-4 left-4 z-10 text-white"
       >
       <UIcon name="i-lucide-menu" class="size-5" />
-      <span ref="menu" class="menu ml-2">
+      <span class="menu">
         Menu
       </span>
     </UButton>
@@ -99,16 +86,24 @@ hr {
 
 
 .menu {
-  transition: all 0.3s ease-in-out;
-  display: flex;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  animation: grow 1s ease-in-out forwards;
+  animation-timeline: scroll();
+  animation-range: 0% 500px;
   width: 50px;
 }
 
-.hidden_menu {
-  width: 0;
+@keyframes grow {
+  from {
+    width: 50px;
+    opacity: 1;
+  }
+  to {
+    width: 0px;
+    opacity: 0;
+  }
 }
 
 </style>
