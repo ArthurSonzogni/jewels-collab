@@ -21,13 +21,11 @@
 
   <div class="max-w-6xl mx-auto p-6 mt-20">
     <div class="products-list">
-      <div v-for="(product, index) in allProducts" :key="index"
-           class="products"
+      <div v-for="product in products" class="products"
            >
            <NuxtLink :to="product.path"> 
            <img class="miniature mx-auto"
                 v-if="product.meta.images[0]"
-                :key="index"
                 :src="`${config.app.baseURL}${product.meta.images[0].image}`"
                 />
            <h2>{{ product.title }}</h2>
@@ -51,7 +49,6 @@
         >
         <img
           v-if="item.image"
-          :key="index"
           :src="`${config.app.baseURL}${item.image}`"
           class="rounded-lg"
           />
@@ -63,27 +60,14 @@
 
 <script setup lang="ts">
 
+import { GetCollections } from '/composables/collections';
+
 const config = useRuntimeConfig();
 const route = useRoute();
 const slug = route.params.slug;
-
-// Fetch the collection data.
-const collection = ref();
-collection.value = 
-(
-await queryCollection('collection').path(`/collection/${slug}`).first()
-)
-
-// Fetch all the products, but filter the one that are in the collection.
-  const allProducts = ref();
-allProducts.value = 
-  (
-    await queryCollection('product').all()
-  )
-  .filter((product) => {
-    return product.meta.collection === slug;
-  })
-
+const collections = await GetCollections();
+const collection = collections[slug];
+const products = collection.products;
 
 </script>
 
