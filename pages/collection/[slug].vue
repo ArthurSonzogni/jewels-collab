@@ -43,9 +43,10 @@
         v-slot="{ item }"
         orientation="horizontal"
         :items="collection.meta.images"
-        class="carousel mx-auto cover-image"
+        class="carousel mx-auto"
         :autoplay="{ delay: 4000 }"
         :ui="{ item: 'lg:basis-1/3 md:basis-1/2 sd:basis-full' }"
+        dots
         >
         <img
           v-if="item.image"
@@ -104,8 +105,7 @@ const products = collection.products;
 }
 
 .carousel {
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 </style>
