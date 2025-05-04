@@ -1,5 +1,10 @@
 <template>
   <div class="max-w-6xl mx-auto p-6 mt-20">
+    <!--Display the product.meta.cover_image-->
+    <img class="cover-image"
+         v-if="collection.meta.cover_image"
+         :src="`${config.app.baseURL}${collection.meta.cover_image}`"
+    />
 
     <h1 class="title font-title">
       {{ collection.title }}
@@ -8,6 +13,8 @@
     <p class="description">
       {{ collection.description }}
     </p>
+
+
 
     <div class="other-products-list">
       <div v-for="(product, index) in allProducts" :key="index"
@@ -31,23 +38,25 @@
 <script setup lang="ts">
 
 const config = useRuntimeConfig();
-
-const slug = useRoute().params.slug;
+const route = useRoute();
+const slug = route.params.slug;
 
 // Fetch the collection data.
-const { data: collection } = await useAsyncData(() =>
-  queryCollection('collection').path(`/collection/${slug}`).first()
-);
+const collection = ref();
+collection.value = 
+  (
+    await queryCollection('collection').path(`/collection/${slug}`).first()
+  )
 
 // Fetch all the products, but filter the one that are in the collection.
-const { data: allProducts } = await useAsyncData(() =>
-  queryCollection('product').all()
-);
-
-// Filter out the products that are not in the collection.
-allProducts.value = allProducts.value.filter((product) => {
-  return product.meta.collection === slug;
-});
+const allProducts = ref();
+allProducts.value = 
+  (
+    await queryCollection('product').all()
+  )
+  .filter((product) => {
+    return product.meta.collection === slug;
+  })
 
 
 </script>
@@ -76,4 +85,11 @@ allProducts.value = allProducts.value.filter((product) => {
   height: var(--width);
   object-fit: cover;
 }
+
+.cover-image {
+  width: 100%;
+  height: px;
+  object-fit: cover;
+}
+
 </style>
