@@ -37,14 +37,7 @@ content:
         type: "object"
         list: true
         fields:
-          - {name: "title", label: "Titre", type: "string"}
           - {name: "image", label: "Image", type: "image"}
-          - name: "images"
-            label: "Images"
-            type: "object"
-            list: true
-            fields:
-              - {name: "image", label: "Image", type: "image"}
 
   - name: "homepage"
     label: "Page d’accueil"

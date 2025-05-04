@@ -1,10 +1,10 @@
 <template>
+  <img class="cover-image"
+       v-if="collection.meta.cover_image"
+       :src="`${config.app.baseURL}${collection.meta.cover_image}`"
+  />
   <div class="max-w-6xl mx-auto p-6 mt-20">
     <!--Display the product.meta.cover_image-->
-    <img class="cover-image"
-         v-if="collection.meta.cover_image"
-         :src="`${config.app.baseURL}${collection.meta.cover_image}`"
-    />
 
     <h1 class="title font-title">
       {{ collection.title }}
@@ -88,7 +88,7 @@ allProducts.value =
 
 .cover-image {
   width: 100%;
-  height: px;
+  height: 30lvh;
   object-fit: cover;
 }
 
