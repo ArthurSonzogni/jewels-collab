@@ -1,12 +1,14 @@
 <script setup lang="ts">
 
+import { GetCollections } from '/composables/collections';
+
 const open = ref(false);
 
 const { data: home } = await useAsyncData(() =>
   queryCollection('content').path('/').first()
 );
 
-const products = await queryCollection('product').all()
+const collections = await GetCollections();
 
 </script>
 
@@ -15,13 +17,13 @@ const products = await queryCollection('product').all()
   <USlideover
     side="left"
     v-model:open="open"
-  >
+    >
     <!--An hamburger icon to open the menu-->
     <UButton
       class="fixed top-4 left-4 z-10 text-white"
       color="neutral"
       >
-        <UIcon name="i-lucide-menu" class="size-5" />
+      <UIcon name="i-lucide-menu" class="size-5" />
     </UButton>
 
     <template #body>
@@ -30,7 +32,7 @@ const products = await queryCollection('product').all()
       <strong>
         <NuxtLink to="/"  class="flex items-center"
                           @click="open = false">
-          Accueil
+        Accueil
         </NuxtLink>
       </strong>
 
@@ -38,27 +40,46 @@ const products = await queryCollection('product').all()
       <strong>
         <NuxtLink to="/about"  class="flex items-center"
                                @click="open = false">
-          A propos
+        A propos
         </NuxtLink>
       </strong>
 
-      <hr/>
-      <strong> Collection </strong>
-      <hr/>
-
-      <div class="flex flex-col gap-2">
+      <div>
         <div
-          v-for="(product, index) in products"
+          v-for="(collection, index) in Object.values(collections)"
           :key="index"
-          class="flex items-center gap-2"
           >
-          <NuxtLink :to="product.path" @click="open = false">
-            {{ product.title }}
-          </NuxtLink>
+          <hr/>
+          <strong>
+            <NuxtLink :to="collection.path" @click="open = false">
+            {{ collection.title }}
+            </NuxtLink>
+          </strong>
+
+          <ul class="ml-2">
+            <li
+              v-for="(product, index) in collection.products"
+              :key="index"
+              >
+              <NuxtLink :to="product.path" @click="open = false">
+              {{ product.title }}
+              </NuxtLink>
+            </li>
+          </ul>
+
         </div>
       </div>
-
       <hr/>
     </template>
   </USlideover>
 </template>
+
+<style scoped lang="scss">
+
+hr {
+  margin: 5px 0;
+  border: 5px solid rgba(0, 0, 200, 0.05);
+  border-radius: 5px;
+}
+
+</style>

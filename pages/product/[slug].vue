@@ -58,18 +58,24 @@
       </ContentRenderer>
     </div>
 
-    <template v-for="[title, products] in collections_list">
-    <hr />
+    <template v-for="collection in Object
+      .values(collections)
 
-    <div class="container">
-      <h1 class="other-product title font-title">{{title}}</h1>
-      <div class="other-products-list">
-        <div
-          v-for="(product, index) in products"
-          :key="index"
-          class="other-product"
-          >
-          <NuxtLink :to="product.path"> 
+    ">
+      <hr />
+
+      <div class="container">
+        <NuxtLink :to="collection.path">
+        <h1 class="other-product title font-title">{{ collection.title }}</h1>
+        </NuxtLink>
+
+        <div class="other-products-list">
+          <div
+            v-for="(product, index) in collection.products"
+            :key="index"
+            class="other-product"
+            >
+            <NuxtLink :to="product.path"> 
             <img class="miniature"
                  v-if="product.meta.images[0]"
                  :key="index"
@@ -77,15 +83,17 @@
                  />
             <h2>{{ product.title }}</h2>
             <p class="price">{{ product.meta.price }}</p>
-          </NuxtLink>
+            </NuxtLink>
+          </div>
         </div>
       </div>
-    </div>
     </template>
   </div>
 </template>
 
 <script setup lang="ts">
+
+import { GetCollections } from '/composables/collections';
 
 const config = useRuntimeConfig();
 
@@ -94,51 +102,11 @@ const { data: product } = await useAsyncData(async () => {
   return await queryCollection('product').path(`/product/${slug}`).first();
 });
 
-const { data: allProducts } = await useAsyncData(() =>
-  queryCollection('product').all()
-);
-
-// Fetch all the collections and map the collection.slug to its collection.title
-const { data: collections_data } = await useAsyncData(() =>
-  queryCollection('collection').all()
-);
-
-const collection_titles = new Map();
-collections_data.value.forEach(collection => {
-  console.log(collection)
-  collection_titles.set(collection.meta.slug, collection.title);
-});
-console.log(collection_titles);
-
-// Fetch all products, and group by collection. Extract the collection from the
-// first product alone.
-
-const collections = {};
-allProducts.value.forEach(product => {
-  collections[product.meta.collection] ||= [];
-  collections[product.meta.collection].push(product);
-});
-
-const collection_current = collections[product.value.meta.collection];
-delete collections[product.value.meta.collection];
-
-// Turn the [collection_current, collections...] into a list of [title, products]
-// where title is the collection name, and products is the list of products.
-
-const collections_list = [
-  [product.value.meta.collection, collection_current],
-  ...Object.entries(collections)
-    .filter(([title, products]) => products.length > 0)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([title, products]) => [title, products])
-]
-  .map(([title, products]) => {
-    return [collection_titles.get(title), products];
-  });
+const collections = await GetCollections();
 
 useSeoMeta({
-  title: product.value.title,
-  description: product.value.description,
+  title: product.title,
+  description: product.description,
 });
 </script>
 
