@@ -15,7 +15,6 @@
     </p>
 
 
-
     <div class="other-products-list">
       <div v-for="(product, index) in allProducts" :key="index"
         class="other-product"
@@ -29,6 +28,19 @@
         <h2>{{ product.title }}</h2>
         <p class="price">{{ product.meta.price }}</p>
         </NuxtLink>
+      </div>
+    </div>
+
+    <!--Iterate over the models images: collection.meta.images-->
+    <div class="other-products-list">
+      <div v-for="(image, index) in collection.meta.images" :key="index"
+        class="other-product"
+      >
+        <img class="miniature"
+             v-if="image.image"
+             :key="index"
+             :src="`${config.app.baseURL}${image.image}`"
+             />
       </div>
     </div>
 
