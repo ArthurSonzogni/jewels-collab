@@ -130,8 +130,11 @@ const collections_list = [
   ...Object.entries(collections)
     .filter(([title, products]) => products.length > 0)
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([title, products]) => [collection_titles.get(title), products])
+    .map(([title, products]) => [title, products])
 ]
+  .map(([title, products]) => {
+    return [collection_titles.get(title), products];
+  });
 
 useSeoMeta({
   title: product.value.title,

@@ -1,32 +1,27 @@
 <template>
-  <div class="container">
+  <div class="max-w-6xl mx-auto p-6 mt-20">
 
-    <h1 class="title font-title text-center">
+    <h1 class="title font-title">
       {{ collection.title }}
     </h1>
 
-    <p class="description text-center">
+    <p class="description">
       {{ collection.description }}
     </p>
 
-    <div class="container">
-      <h1 class="other-product title font-title">Dans la collection</h1>
-      <div class="other-products-list">
-        <div
-          v-for="(product, index) in allProducts"
-          :key="index"
-          class="other-product"
-          >
-          <NuxtLink :to="product.path"> 
-          <img class="miniature"
-               v-if="product.meta.images[0]"
-               :key="index"
-               :src="`${config.app.baseURL}${product.meta.images[0].image}`"
-               />
-          <h2>{{ product.title }}</h2>
-          <p class="price">{{ product.meta.price }}</p>
-          </NuxtLink>
-        </div>
+    <div class="other-products-list">
+      <div v-for="(product, index) in allProducts" :key="index"
+        class="other-product"
+      >
+        <NuxtLink :to="product.path"> 
+        <img class="miniature"
+             v-if="product.meta.images[0]"
+             :key="index"
+             :src="`${config.app.baseURL}${product.meta.images[0].image}`"
+             />
+        <h2>{{ product.title }}</h2>
+        <p class="price">{{ product.meta.price }}</p>
+        </NuxtLink>
       </div>
     </div>
 

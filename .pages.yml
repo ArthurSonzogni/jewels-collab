@@ -1,69 +1,69 @@
 media: 
-  input: public/images
-  output: /images
+  input: "public/images"
+  output: "/images"
 
 content:
-  - name: homepage
-    label: Homepage
-    type: file
-    path: content/index.md
-    filename: index.md
-    fields:
-      - {name: title, label: Title, type: string}
-      - name: videos
-        label: Video
-        type: object
-        list: true
-        fields:
-          - {name: title, label: Title, type: string}
-          - {name: portrait, label: Video Portrait, type: string}
-          - {name: landscape, label: Video Landscape, type: string}
-
-  - name: collection
-    label: Collection
-    type: collection
-    path: content/collection
+  - name: "product"
+    label: "Produits"
+    type: "collection"
+    path: "content/product"
     filename: "{fields.slug}.md"
     fields:
-      - {name: slug, label: Slug, type: string}
-      - {name: title, label: Title, type: string}
-      - {name: description, label: Short Description, type: string}
-      - name: images
-        label: Images
-        type: object
+      - {name: "slug", label: "Identifiant", type: "string"}
+      - {name: "collection", label: "Collection", type: "string"}
+      - {name: "title", label: "Titre", type: "string"}
+      - {name: "description", label: "Description courte", type: "string"}
+      - {name: "price", label: "Prix", type: "string"}
+      - {name: "payment_link", label: "Lien de paiement", type: "string"}
+      - name: "images"
+        label: "Images"
+        type: "object"
         list: true
         fields:
-          - {name: title, label: Title, type: string}
-          - {name: image, label: Image, type: image}
-          - name: images
-            label: Images
-            type: object
+          - {name: "image", label: "Image", type: "image"}
+
+  - name: "collection"
+    label: "Collection"
+    type: "collection"
+    path: "content/collection"
+    filename: "{fields.slug}.md"
+    fields:
+      - {name: "slug", label: "Identifiant", type: "string"}
+      - {name: "title", label: "Titre", type: "string"}
+      - {name: "description", label: "Description courte", type: "string"}
+      - {name: "cover_image", label: "Image de couverture", type: "image"}
+      - name: "images"
+        label: "Images"
+        type: "object"
+        list: true
+        fields:
+          - {name: "title", label: "Titre", type: "string"}
+          - {name: "image", label: "Image", type: "image"}
+          - name: "images"
+            label: "Images"
+            type: "object"
             list: true
             fields:
-              - {name: image, label: Image, type: image}
+              - {name: "image", label: "Image", type: "image"}
 
-  - name: product
-    label: Products
-    type: collection
-    path: content/product
-    filename: "{fields.slug}.md"
+  - name: "homepage"
+    label: "Page d’accueil"
+    type: "file"
+    path: "content/index.md"
+    filename: "index.md"
     fields:
-      - {name: slug, label: Slug, type: string}
-      - {name: collection, label: Collection, type:string}
-      - {name: title, label: Title, type: string}
-      - {name: description, label: Short Description, type: string}
-      - {name: price, label: Price, type: string}
-      - {name: payment_link, label: Payment Link, type: string}
-      - name: images
-        label: Images
-        type: object
+      - {name: "title", label: "Titre", type: "string"}
+      - name: "videos"
+        label: "Vidéos"
+        type: "object"
         list: true
         fields:
-          - {name: image, label: Image, type: image}
+          - {name: "title", label: "Titre", type: "string"}
+          - {name: "portrait", label: "Vidéo Portrait", type: "string"}
+          - {name: "landscape", label: "Vidéo Paysage", type: "string"}
 
-  - name: about
-    label: About
-    type: file
-    path: content/about.md
-    filename: about.md
-
+  - name: "about"
+    label: "À propos"
+    type: "file"
+    path: "content/about.md"
+    filename: "about.md"
