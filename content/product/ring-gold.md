@@ -1,5 +1,5 @@
 ---
-slug: ring-gold
+slug: Bague-gold
 collection: gold
 title: Bague athéna laiton galvanisé or
 description: Ornez votre main d'une touche de sophistication intemporelle avec
