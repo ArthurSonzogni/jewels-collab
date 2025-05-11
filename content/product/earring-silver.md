@@ -7,7 +7,7 @@ description: Illuminez votre visage avec ces raffinées boucles d'oreilles en
   accessoire polyvalent, idéal pour ajouter une touche d'élégance discrète à
   toutes vos occasions. Confectionnées avec soin, elles allient style et
   confort.
-price: 650 €
+price: 690 €
 payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
 images:
   - {}
@@ -16,6 +16,8 @@ images:
   - image: /images/VINCENT ARNOULD 31.jpg
   - image: /images/VINCENT ARNOULD 432.jpg
   - image: /images/VINCENT ARNOULD 747.jpg
-  - image: /images/VINCENT ARNOULD 683.jpg
+  - {}
   - image: /images/VINCENT ARNOULD 754.jpg
+  - image: /images/VINCENT ARNOULD 32.jpg
+  - image: /images/VINCENT ARNOULD 239.jpg
 ---
