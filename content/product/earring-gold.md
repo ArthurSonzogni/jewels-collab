@@ -1,5 +1,5 @@
 ---
-slug: earring-gold
+slug: Boucles oreilles-gold
 collection: gold
 title: Exquises Boucles d'Oreilles en Or Pur
 description: Sublimez votre allure avec ces exquises boucles d'oreilles en or
