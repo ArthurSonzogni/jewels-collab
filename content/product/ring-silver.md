@@ -1,5 +1,5 @@
 ---
-slug: ring-silver
+slug: Bague-silver
 collection: silver
 title: Délicate Bague en Argent Sterling
 description: Ajoutez une touche d'élégance discrète à votre main avec cette
