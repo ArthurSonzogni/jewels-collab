@@ -2,10 +2,9 @@ export default defineNuxtConfig({
   target: 'static',
   ssr: false,
   site: {
-    url: 'https://arthursonzogni.github.io',
+    url: 'https://jewels-collab.com',
   },
   app: {
-    baseURL: '/jewels-collab/',
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   compatibilityDate: '2025-01-01',
