@@ -17,6 +17,13 @@ export async function GetCollections() {
     const collection = product.meta.collection;
     if (!collections[collection]) {
       console.warn('Product without collection', products[p]);
+      collections["Autre"] ||= {
+        title: "Autre",
+        slug: "autre",
+        description: "Autre",
+        products: []
+      };
+      collections["Autre"].products.push(product);
       continue;
     }
 
