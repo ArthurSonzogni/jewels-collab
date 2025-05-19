@@ -2,7 +2,7 @@
   <div>
   <img class="cover-image"
        v-if="collection.meta.cover_image"
-       :src="`${config.app.baseURL}${collection.meta.cover_image}`"
+       :src="collection.meta.cover_image"
        />
 
   <div class="max-w-6xl mx-auto p-6 mt-20">
@@ -26,7 +26,7 @@
            <NuxtLink :to="product.path"> 
            <img class="miniature mx-auto"
                 v-if="product.meta.images[0]"
-                :src="`${config.app.baseURL}${product.meta.images[0].image}`"
+                :src="product.meta.images[0].image"
                 />
            <h2>{{ product.title }}</h2>
            <p class="price">{{ product.meta.price }}</p>
@@ -50,7 +50,7 @@
         >
         <img
           v-if="item.image"
-          :src="`${config.app.baseURL}${item.image}`"
+          :src="item.image"
           class="rounded-lg"
           />
       </UCarousel>

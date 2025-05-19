@@ -5,7 +5,7 @@
         <img class="image"
              v-for="(image, index) in product.meta.images"
              :key="index"
-             :src="`${config.app.baseURL}${image.image}`"
+             :src="image.image"
              />
       </div>
 
@@ -79,7 +79,7 @@
             <img class="miniature"
                  v-if="product.meta.images[0]"
                  :key="index"
-                 :src="`${config.app.baseURL}${product.meta.images[0].image}`"
+                 :src="product.meta.images[0].image"
                  />
             <h2>{{ product.title }}</h2>
             <p class="price">{{ product.meta.price }}</p>
