@@ -3,8 +3,23 @@ const { data: home } = await useAsyncData(() =>
   queryCollection('content').path('/').first()
 );
 
+// Format is:
+// title: Jewels-Collab
+// videos:
+//   - title: "Gold Forest"
+//     landscape: /videos/gold-forest.mp4
+//     portrait: /videos/gold-forest-portrait.mp4
+//   - title: "Silver Forest"
+//     landscape: /videos/silver-forest.mp4
+// images:
+//   - image: /images/gold-forest.png
+//     link: /collection/gold
+//   - image: /images/background-silver.png
+//     link: /collection/silver
+//   - image: /images/background-gold.png
+//     link: /collection/gold
+
 const items = ref(home.value?.meta.videos);
-console.log(items.value);
 
 useSeoMeta({
   title: home.value?.title,
@@ -20,6 +35,14 @@ const nextVideo = () => {
 const prevVideo = () => {
   currentVideo.value = (currentVideo.value - 1 + items.length) % items.length;
 };
+
+const images = ref(home.value?.meta.images);
+
+// Resolve the image[i].link with the base URL.
+//const origin = window.location.origin;
+//for (let i = 0; i < images.value.length; i++) {
+//  images.value[i].link = new URL(images.value[i].link, origin).href;
+//}
 
 
 </script>
@@ -56,8 +79,17 @@ const prevVideo = () => {
     </div>
   </UCarousel>
   
-  <CollectionGold />
-  <CollectionSilver />
+  <!--Display the images in 100vh with a link.-->
+  <div class="image-collection">
+    <div v-for="(image, index) in images" :key="index" class="image-item">
+      <NuxtLink :to="image.link">
+        <ImageFullscreen
+          :image="image.image"
+          :title="home.value?.title"
+        />
+      </NuxtLink>
+    </div>
+  </div>
 
   </div>
 

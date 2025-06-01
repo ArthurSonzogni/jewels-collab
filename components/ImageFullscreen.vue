@@ -1,14 +1,38 @@
 <template>
   <div class="collection relative h-screen bg-black text-white">
-    <div class="backgroundImage backgroundImageBlur"</div>
-    <div class="backgroundImage"</div>
+    <div ref="image" class="backgroundImage backgroundImageBlur"</div>
+    <div ref="image_back" class="backgroundImage"</div>
     
-    <h1 class="title">Collection Or</h1>
-
-    <NuxtLink to="/product/ring-gold" class="link link-1"/>
-    <NuxtLink to="/product/earring-gold" class="link link-2"/>
+    <h1 class="title">
+      {{ props.title }}
+    </h1>
   </div>
 </template>
+
+<script setup lang="ts">
+
+const image = ref<HTMLDivElement | null>(null);
+const image_back = ref<HTMLDivElement | null>(null);
+
+const props = defineProps({
+  title: {
+    type: String,
+  },
+  image: {
+    type: String,
+  },
+});
+
+onMounted(() => {
+  if (image.value) {
+    image.value.style.backgroundImage = `url(${props.image})`;
+  }
+  if (image_back.value) {
+    image_back.value.style.backgroundImage = `url(${props.image})`;
+  }
+});
+
+</script>
 
 <style scoped lang="scss">
 
@@ -43,7 +67,6 @@ nav {
   position: absolute;
   top: 0;
   width: 100%;
-  background-image: url('/images/background-gold.png');
   background-size: contain;
   background-position: center;
   height: 100svh;
@@ -66,43 +89,4 @@ nav {
     font-size: 3rem;
   }
 }
-
-.link {
-  display: block;
-  border-radius: 50%;
-  transition: all 1.0s ease;
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    filter: blur(20px);
-  }
-  position:absolute;
-}
-
-.link-1 {
-  height: 26svh;
-  width: 26svh;
-  top: 60svh;
-  left: calc(50svw - 25svh);
-  @media (max-aspect-ratio: 1024/1536) {
-    width:30svw;
-    height:30svw;
-    top: calc(50svh + 15svw);
-    left: 18svw;
-  }
-}
-
-.link-2 {
-  height: 26svh;
-  width: 26svh;
-  top: 63svh;
-  left: calc(50svw + 1svh);
-
-  @media (max-aspect-ratio: 1024/1536) {
-    width:30svw;
-    height:30svw;
-    top: calc(50svh + 22svw);
-    left: 52svw;
-  }
-}
-
 </style>

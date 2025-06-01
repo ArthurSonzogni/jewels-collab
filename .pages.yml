@@ -24,6 +24,7 @@ content:
         type: "object"
         list: true
         fields:
+          - {name: "title", label: "Titre", type: "string"}
           - {name: "image", label: "Image", type: "image"}
           - {name: "link", label: "Lien", type: "string"}
 
