@@ -7,5 +7,4 @@ images:
   - title: La collection dorée
     image: /images/gold-forest-2.png
     link: /collection/gold
-  - link: /collection/gold
 ---
