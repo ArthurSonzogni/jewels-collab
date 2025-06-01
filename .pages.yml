@@ -69,3 +69,15 @@ content:
     type: "file"
     path: "content/about.md"
     filename: "about.md"
+
+  - name: "cgu"
+    label: "CGU"
+    type: "file"
+    path: "content/cgu.md"
+    filename: "cgu.md"
+
+  - name: "cgv"
+    label: "CGV"
+    type: "file"
+    path: "content/cgv.md"
+    filename: "cgv.md"
