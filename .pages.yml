@@ -3,6 +3,28 @@ media:
   output: "/images"
 
 content:
+  - name: "homepage"
+    label: "Page d’accueil"
+    type: "file"
+    path: "content/index.md"
+    filename: "index.md"
+    fields:
+      - {name: "title", label: "Titre", type: "string"}
+      - name: "videos"
+        label: "Vidéos"
+        type: "object"
+        list: true
+        fields:
+          - {name: "title", label: "Titre", type: "string"}
+          - {name: "portrait", label: "Vidéo Portrait", type: "string"}
+          - {name: "landscape", label: "Vidéo Paysage", type: "string"}
+      - name: "images"
+        label: "Images"
+        type: "object"
+        list: true
+        fields:
+          - {name: "image", label: "Image", type: "image"}
+
   - name: "product"
     label: "Produits"
     type: "collection"
@@ -38,22 +60,6 @@ content:
         list: true
         fields:
           - {name: "image", label: "Image", type: "image"}
-
-  - name: "homepage"
-    label: "Page d’accueil"
-    type: "file"
-    path: "content/index.md"
-    filename: "index.md"
-    fields:
-      - {name: "title", label: "Titre", type: "string"}
-      - name: "videos"
-        label: "Vidéos"
-        type: "object"
-        list: true
-        fields:
-          - {name: "title", label: "Titre", type: "string"}
-          - {name: "portrait", label: "Vidéo Portrait", type: "string"}
-          - {name: "landscape", label: "Vidéo Paysage", type: "string"}
 
   - name: "about"
     label: "À propos"
