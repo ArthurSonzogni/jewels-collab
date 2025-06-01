@@ -79,16 +79,13 @@ const images = ref(home.value?.meta.images);
     </div>
   </UCarousel>
   
-  <!--Display the images in 100vh with a link.-->
-  <div class="image-collection">
-    <div v-for="(image, index) in images" :key="index" class="image-item">
-      <NuxtLink :to="image.link">
-        <ImageFullscreen
-          :image="image.image"
-          :title="home.value?.title"
-        />
-      </NuxtLink>
-    </div>
+  <div v-for="(image, index) in images" :key="index" class="image-item">
+    <NuxtLink :to="image.link">
+      <ImageFullscreen
+        :image="image.image"
+        :title="image.title"
+      />
+    </NuxtLink>
   </div>
 
   </div>
