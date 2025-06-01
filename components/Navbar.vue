@@ -72,6 +72,19 @@ const collections = await GetCollections();
         </div>
       </div>
       <hr/>
+      <strong>
+        <NuxtLink to="/cgu"  
+                             @click="open = false">
+        CGU
+        </NuxtLink>
+        et
+        <NuxtLink to="/cgv"  
+                             @click="open = false">
+        CGV
+        </NuxtLink>
+      </strong>
+      <hr/>
+
     </template>
   </USlideover>
 </template>
