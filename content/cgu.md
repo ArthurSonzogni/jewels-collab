@@ -16,7 +16,7 @@ L’éditeur du Site se réserve le droit de modifier les présentes CGU à tout
 
 Dans les présentes CGU, les termes suivants auront la signification ci-dessous :
 
-- **Site** : désigne le site internet jewels-collab accessible à l’adresse [indiquer l'URL].
+- **Site** : désigne le site internet jewels-collab accessible à l’adresse https://jewels-collab.com/.
 - **Utilisateur** : toute personne naviguant sur le Site, qu’elle soit simple visiteuse ou acheteuse.
 - **Vendeur** : désigne l’exploitant du Site qui propose les produits à la vente.
 - **Produit** : désigne tout article de joaillerie ou de bijouterie proposé sur le Site.
