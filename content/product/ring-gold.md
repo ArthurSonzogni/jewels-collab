@@ -15,7 +15,7 @@ images:
   - image: /images/ring-gold-5.jpeg
   - image: /images/model-gold.jpeg
   - image: /images/model-gold-3.jpeg
-  - {}
-  - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 150.jpg
+  - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 180-1.jpg
+  - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 132.jpg
   - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 81.jpg
 ---
