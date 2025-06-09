@@ -1,6 +1,6 @@
 ---
 slug: " Commande sur mesure "
-title: "Boucle oreilles haute joaillerie "
+title: "Boucles d'oreilles tsavorites et tourmalines "
 price: Sur demande
 images:
   - image: /images/VINCENT ARNOULD 76.jpg
