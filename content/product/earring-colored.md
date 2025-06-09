@@ -12,7 +12,7 @@ images:
   - image: /images/VINCENT ARNOULD 4.jpg
   - image: /images/VINCENT ARNOULD 3.jpg
   - image: /images/VINCENT ARNOULD 10.jpg
-  - image: /images/VINCENT ARNOULD 484.jpg
+  - image: /images/VINCENT ARNOULD 454-1.jpg
   - image: /images/VINCENT ARNOULD 471.jpg
   - image: /images/VINCENT ARNOULD 491.jpg
   - image: /images/VINCENT ARNOULD 525.jpg
