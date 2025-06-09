@@ -16,4 +16,5 @@ images:
   - image: /images/VINCENT ARNOULD 49.jpg
   - image: /images/VINCENT ARNOULD 42.jpg
   - image: /images/VINCENT ARNOULD 472.jpg
+  - image: /images/VINCENT ARNOULD 540.jpg
 ---
