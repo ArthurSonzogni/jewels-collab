@@ -1,6 +1,9 @@
 ---
-slug: Bague-gold
-collection: gold
+url: Bague-gold
+collection: athena
+variant_group: ring
+variant: gold
+variant_color: gold
 title: Bague athéna laiton galvanisé or
 description: Ornez votre main d'une touche de sophistication intemporelle avec
   cette élégante bague en or fin. Son design délicat et l'éclat chaleureux de

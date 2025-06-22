@@ -1,6 +1,9 @@
 ---
-slug: Boucles oreilles-silver
-collection: colored
+url: earring-colored
+collection: athena
+variant_group: earring
+variant: colored
+variant_color: green
 title: Élégantes Boucles d'Oreilles Éclat Coloré
 description: Rehaussez votre style avec ces élégantes boucles d'oreilles. Leur
   design raffiné met en valeur une subtile touche de couleur, parfaites pour

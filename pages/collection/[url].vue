@@ -65,9 +65,9 @@ import { GetCollections } from '/composables/collections';
 
 const config = useRuntimeConfig();
 const route = useRoute();
-const slug = route.params.slug;
+const url = route.params.url;
 const collections = await GetCollections();
-const collection = collections[slug];
+const collection = collections[url];
 const products = collection.products;
 
 </script>

@@ -97,9 +97,9 @@ import { GetCollections } from '/composables/collections';
 
 const config = useRuntimeConfig();
 
-const slug = useRoute().params.slug;
+const url = useRoute().params.url;
 const { data: product } = await useAsyncData(async () => {
-  return await queryCollection('product').path(`/product/${slug}`).first();
+  return await queryCollection('product').path(`/product/${url}`).first();
 });
 
 const collections = await GetCollections();

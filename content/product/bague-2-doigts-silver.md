@@ -1,6 +1,9 @@
 ---
-slug: Bague 2 doigts silver
-collection: Bague 2 doigts silver
+url: bague-2-doigts-silver
+collection: athena
+variant_group: bague_2_doigts
+variant: silver
+variant_color: silver
 price: 450 €
 images:
   - image: /images/VINCENT ARNOULD 58.jpg

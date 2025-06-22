@@ -1,6 +1,9 @@
 ---
-slug: Bracelet Athéna-silver
-collection: silver
+url: earring-silver
+collection: athena
+variant_group: earring
+variant: silver 
+variant_color: silver 
 title: Bracelet athena  en Argent
 price: 690 €
 payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ

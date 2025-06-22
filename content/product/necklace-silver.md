@@ -1,6 +1,9 @@
 ---
-slug: Collier Athéna-silver
-collection: silver
+url: athena-necklace-silver
+collection: athena
+variant_group: necklace
+variant: silver 
+variant_color: silver 
 title: Délicat Collier en Argent Sterling
 description: Mettez en valeur votre décolleté avec ce délicat collier en argent
   sterling. Son design épuré et l'éclat subtil de l'argent en font un bijou

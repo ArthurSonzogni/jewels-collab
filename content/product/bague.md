@@ -1,6 +1,9 @@
 ---
-slug: "Bague 2 doigts "
-collection: gold
+url: bague-2-doigts-silver
+collection: athena
+variant_group: bague_2_doigts
+variant: "gold"
+variant_color: "gold"
 title: "Bague 2 doigts  laiton doré "
 price: 450 €
 images:

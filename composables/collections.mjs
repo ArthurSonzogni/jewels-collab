@@ -2,7 +2,7 @@ export async function GetCollections() {
   const bySlug = (array) => {
     const result = {};
     for (const item of array) {
-      result[item.meta.slug] = item;
+      result[item.meta.url] = item;
     }
     return result;
   }
@@ -19,7 +19,7 @@ export async function GetCollections() {
       console.warn('Product without collection', products[p]);
       collections["Autre"] ||= {
         title: "Autre",
-        slug: "autre",
+        url: "autre",
         description: "Autre",
         products: []
       };

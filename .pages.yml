@@ -32,10 +32,13 @@ content:
     label: "Produits"
     type: "collection"
     path: "content/product"
-    filename: "{fields.slug}.md"
+    filename: "{fields.url}.md"
     fields:
-      - {name: "slug", label: "Identifiant", type: "string"}
+      - {name: "url", label: "URL", type: "string"}
       - {name: "collection", label: "Collection", type: "string"}
+      - {name: "variant_group", label: "Groupe de variantes", type: "string"}
+      - {name: "variant", label: "Variante", type: "string"}
+      - {name: "variant_color", label: "Couleur de la variante", type: "string"}
       - {name: "title", label: "Titre", type: "string"}
       - {name: "description", label: "Description courte", type: "string"}
       - {name: "price", label: "Prix", type: "string"}
@@ -51,9 +54,9 @@ content:
     label: "Collection"
     type: "collection"
     path: "content/collection"
-    filename: "{fields.slug}.md"
+    filename: "{fields.url}.md"
     fields:
-      - {name: "slug", label: "Identifiant", type: "string"}
+      - {name: "url", label: "URL", type: "string"}
       - {name: "title", label: "Titre", type: "string"}
       - {name: "description", label: "Description courte", type: "string"}
       - {name: "cover_image", label: "Image de couverture", type: "image"}

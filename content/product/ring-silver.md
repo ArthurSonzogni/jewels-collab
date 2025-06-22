@@ -1,6 +1,9 @@
 ---
-slug: Bague-silver
-collection: silver
+url: bague-silver
+collection: athena
+variant_group: ring
+variant: silver
+variant_color: silver
 title: Délicate Bague en Argent Sterling
 description: Ajoutez une touche d'élégance discrète à votre main avec cette
   délicate bague en argent sterling. Son design épuré et l'éclat subtil de
