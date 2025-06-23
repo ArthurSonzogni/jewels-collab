@@ -200,7 +200,6 @@ html {
 
 .images {
   display: flex;
-  background-color: red;
   justify-content: center;
   flex-direction: column;
   @media (min-width: 800px) {
