@@ -17,6 +17,8 @@ const collections = await GetCollections();
   <USlideover
     side="left"
     v-model:open="open"
+    title="Menu"
+    description=" "
     >
     <!--An hamburger icon to open the menu-->
     <UButton

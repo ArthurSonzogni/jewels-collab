@@ -3,7 +3,7 @@
     <div class="main-container">
       <div class="images">
         <img class="image"
-             v-for="(image, index) in product.meta.images"
+             v-for="(image, index) in product.meta.variants[variant].images"
              :key="index"
              :src="image.image"
              />
@@ -13,12 +13,30 @@
         <div class="details-content">
           <div class="small_screen">
             <div>
-              <span class="title mr-6">{{ product.title }}</span>
-              <span class="price">{{ product.meta.price }}</span>
+              <span class="title mr-6">
+                {{ product.title }}
+              </span>
+              <span class="price">{{ product.meta.variants[variant].price }}</span>
             </div>
+            <div class="variant-selector">
+              <span class="title">Variante</span>
+              <select
+                v-model="variant"
+                class="form-select"
+                >
+                <option
+                  v-for="(v, index) in product.meta.variants"
+                  :key="index"
+                  :value="index"
+                  >
+                  {{ v.title }}
+                </option>
+              </select>
+            </div>
+
             <UButton
-              v-if="product.meta.payment_link"
-              :href="product.meta.payment_link"
+              v-if="product.meta.variants[variant].payment_link"
+              :href="product.meta.variants[variant].payment_link"
               icon="fa6-solid:basket-shopping"
               color="primary"
               variant="soft"
@@ -29,15 +47,35 @@
           </div>
 
           <div class="large_screen">
-            <h1 class="title font-title mr-6">{{ product.title }}</h1>
-            <span class="price">{{ product.meta.price }}</span>
+            <h1 class="title font-title mr-6">
+              {{ product.title }} /
+              {{ product.meta.variants[variant].title }}
+            </h1>
+            <span class="price">{{ product.meta.variants[variant].price }}</span>
             <hr />
             <p>{{ product.description }}</p>
             <hr />
 
+            <div class="variant-selector">
+              <span class="title">Variante</span>
+              <select
+                v-model="variant"
+                class="form-select"
+                >
+                <option
+                  v-for="(v, index) in product.meta.variants"
+                  :key="index"
+                  :value="index"
+                  >
+                  {{ v.title }}
+                </option>
+              </select>
+
+            </div>
+
             <UButton
-              v-if="product.meta.payment_link"
-              :href="product.meta.payment_link"
+              v-if="product.meta.variants[variant].payment_link"
+              :href="product.meta.variants[variant].payment_link"
               color="neutral"
               variant="soft"
               size="xl"
@@ -58,11 +96,12 @@
       </ContentRenderer>
     </div>
 
+    <hr/>
+
     <template v-for="collection in Object
       .values(collections)
 
     ">
-      <hr />
 
       <div class="container">
         <NuxtLink :to="collection.path">
@@ -77,12 +116,12 @@
             >
             <NuxtLink :to="product.path"> 
             <img class="miniature"
-                 v-if="product.meta.images[0]"
+                 v-if="product.meta.variants[0].images[0]"
                  :key="index"
-                 :src="product.meta.images[0].image"
+                 :src="product.meta.variants[0].images[0].image"
                  />
             <h2>{{ product.title }}</h2>
-            <p class="price">{{ product.meta.price }}</p>
+            <p class="price">{{ product.meta.variants[0].price }}</p>
             </NuxtLink>
           </div>
         </div>
@@ -95,14 +134,36 @@
 
 import { GetCollections } from '/composables/collections';
 
+const route = useRoute();
+const router = useRouter();
+
 const config = useRuntimeConfig();
 
 const url = useRoute().params.url;
-const { data: product } = await useAsyncData(async () => {
-  return await queryCollection('product').path(`/product/${url}`).first();
-});
-
+const product = await queryCollection('product').path(`/product/${url}`).first();
 const collections = await GetCollections();
+
+const variant = ref(0);
+try {
+  if (route.query.variant) {
+    variant.value = parseInt(route.query.variant as string, 10);
+  }
+} catch (e) {
+  console.error('Invalid variant query parameter:', e);
+}
+variant.value = Math.min(
+  Math.max(variant.value, 0),
+  product.meta.variants.length - 1
+);
+watch([variant], () => {
+  router.replace({
+    query: {
+      variant: variant.value.toString(),
+    },
+  });
+  // Reset scroll position to the top of the page when variant changes
+  window.scrollTo(0, 0);
+});
 
 useSeoMeta({
   title: product.title,

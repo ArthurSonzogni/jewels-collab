@@ -21,12 +21,11 @@
 
   <div class="max-w-6xl mx-auto p-6 mt-20">
     <div class="products-list">
-      <div v-for="product in products" class="products"
-           >
+      <div v-for="product in products" class="products">
            <NuxtLink :to="product.path"> 
            <img class="miniature mx-auto"
-                v-if="product.meta.images[0]"
-                :src="product.meta.images[0].image"
+                v-if="product.meta.variants[0].images[0]"
+                :src="product.meta.variants[0].images[0].image"
                 />
            <h2>{{ product.title }}</h2>
            <p class="price">{{ product.meta.price }}</p>

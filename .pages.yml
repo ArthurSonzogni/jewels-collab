@@ -36,19 +36,23 @@ content:
     fields:
       - {name: "url", label: "URL", type: "string"}
       - {name: "collection", label: "Collection", type: "string"}
-      - {name: "variant_group", label: "Groupe de variantes", type: "string"}
-      - {name: "variant", label: "Variante", type: "string"}
-      - {name: "variant_color", label: "Couleur de la variante", type: "string"}
       - {name: "title", label: "Titre", type: "string"}
       - {name: "description", label: "Description courte", type: "string"}
-      - {name: "price", label: "Prix", type: "string"}
-      - {name: "payment_link", label: "Lien de paiement", type: "string"}
-      - name: "images"
-        label: "Images"
+      - name: "variants"
+        label: "Variantes"
         type: "object"
         list: true
         fields:
-          - {name: "image", label: "Image", type: "image"}
+          - {name: "title", label: "Titre", type: "string"}
+          - {name: "price", label: "Prix", type: "string"}
+          - {name: "payment_link", label: "Lien de paiement", type: "string"}
+          - {name: "color", label: "Couleur", type: "string"}
+          - name: "images"
+            label: "Images"
+            type: "object"
+            list: true
+            fields:
+              - {name: "image", label: "Image", type: "image"}
 
   - name: "collection"
     label: "Collection"
