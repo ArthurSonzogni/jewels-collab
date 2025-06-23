@@ -1,13 +1,13 @@
 ---
 url: bague-athena
 collection: athena
-title: Bague athena
+title: Bague
 description: >
-    Cette bague en argent massif est un bijou d'exception, alliant élégance et
-    modernité. Son design unique et sa finition soignée en font un accessoire
-    incontournable pour toute occasion. Fabriquée avec des matériaux de haute
-    qualité, elle offre une durabilité exceptionnelle tout en ajoutant une
-    touche de sophistication à votre style.
+  Cette bague en argent massif est un bijou d'exception, alliant élégance et
+  modernité. Son design unique et sa finition soignée en font un accessoire
+  incontournable pour toute occasion. Fabriquée avec des matériaux de haute
+  qualité, elle offre une durabilité exceptionnelle tout en ajoutant une touche
+  de sophistication à votre style.
 variants:
   - title: Laiton doré
     price: 450 €
@@ -61,11 +61,3 @@ variants:
       - image: /images/VINCENT ARNOULD 248.jpg
       - image: /images/VINCENT ARNOULD 67.jpg
 ---
-
-# Bague Athena
-
-Cette bague en argent massif est un bijou d'exception, alliant élégance et
-modernité. Son design unique et sa finition soignée en font un accessoire
-incontournable pour toute occasion. Fabriquée avec des matériaux de haute
-qualité, elle offre une durabilité exceptionnelle tout en ajoutant une touche de
-sophistication à votre style.
