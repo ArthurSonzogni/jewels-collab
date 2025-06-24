@@ -81,12 +81,14 @@ nav {
 
 .title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-top: 3rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   @media (max-width: 768px) {
-    font-size: 3rem;
+    margin-top: 2rem;
+    font-size: 2rem;
   }
 }
 </style>
