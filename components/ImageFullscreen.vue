@@ -36,15 +36,13 @@ onMounted(() => {
 
 <style scoped lang="scss">
 
-nav {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-family: "Luxurious serifs", sans-serif;
-  color: rgba(128, 128, 128, 0.8);
-  :hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition: color 0.3s ease;
+@keyframes blur-text {
+  0% {
+    filter: blur(0);
+  }
+
+  100% {
+    filter: blur(30px);
   }
 }
 
@@ -52,14 +50,13 @@ nav {
   position: relative;
 }
 
-
 .title {
   position: absolute;
-  top: 0;
+  bottom: 3rem;
   width: 100%;
   text-align: center;
   @media (max-aspect-ratio: 1024/1536) {
-    top:calc(50svh - 70svw);
+    bottom:calc(50svh - 70svw);
   }
 }
 
@@ -85,6 +82,10 @@ nav {
   margin-top: 3rem;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  animation: blur-text linear forwards;
+  animation-timeline: view();
+  animation-range: 70% 100%;
 
   @media (max-width: 768px) {
     margin-top: 2rem;

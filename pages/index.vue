@@ -32,10 +32,9 @@ const images = ref(home.meta.images);
 
 <template>
   <div>
-
-    <div class="max-w-4xl mx-auto p-6">
-      <ContentRenderer :value="home"  class="about p-5" />
-    </div>
+    <h1>
+      {{ home.title }}
+    </h1>
 
     <div>
       <SeeBelow />
@@ -82,12 +81,29 @@ const images = ref(home.meta.images);
 </template>
 
 <style scoped>
-.header h1 {
+h1 {
+  color: white;
+  font-family: "Cinzel", sans-serif;
+  font-size: 48px;
+  font-weight: 50;
+  left: 0;
+  position:fixed;
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 20px;
-  color: #333;
+  top: 1rem;
+  width: 100%;
+  z-index: 1;
+  text-shadow:
+    0px 0px 1px rgba(0, 0, 0, 0.7),
+    0px 1px 1px rgba(0, 0, 0, 0.5),
+    0px 2px 1px rgba(0, 0, 0, 0.3),
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 4px 5px rgba(0, 0, 0, 1.0);
+}
+
+@keyframes move-bg {
+  to {
+    background-position: 0 var(--bg-size);
+  }
 }
 
 .video-container {

@@ -240,17 +240,6 @@ html {
         font-weight: 600;
       }
     }
-
-    // Optional: drop cap on first paragraph
-    p:first-of-type::first-letter {
-      float: left;
-      font-size: 3.2rem;
-      line-height: 1;
-      margin-right: 0.15em;
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-    }
   }
-
 }
 

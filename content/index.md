@@ -8,7 +8,3 @@ images:
     image: /images/gold-forest-2.png
     link: /product/bague-athena?variant=0
 ---
-
-# Jewels-Collab
-
-Description de Jewels-Collab. 
