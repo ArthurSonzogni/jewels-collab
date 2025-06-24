@@ -7,7 +7,7 @@ description: Mettez en valeur votre décolleté avec ce délicat collier en arge
   polyvalent, parfait pour ajouter une touche de sophistication discrète à votre
   style quotidien ou pour compléter une tenue élégante.
 variants:
-  - title: Argent
+  - title: "Argent ou Doré "
     price: 1000 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: "Argent ou doré "
