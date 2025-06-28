@@ -14,7 +14,7 @@ variants:
     images:
       - image: /images/earring-gold.jpeg
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 211.jpg
-      - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 104.jpg
+      - {}
       - image: /images/model-gold.jpeg
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 77.jpg
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 219.jpg
