@@ -22,14 +22,14 @@ variants:
   - title: Argent
     price: 600 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
-    color: silver
+    color: Argenr
     images:
-      - {}
-      - {}
-      - {}
-      - {}
-      - {}
-      - {}
+      - image: /images/VINCENT ARNOULD 1.jpg
+      - image: /images/VINCENT ARNOULD 3-1.jpg
+      - image: /images/VINCENT ARNOULD 9.jpg
+      - image: /images/IMG_2336.jpg
+      - image: /images/VINCENT ARNOULD 400-1.jpg
+      - image: /images/VINCENT ARNOULD 526-1.jpg
       - {}
       - {}
 ---
