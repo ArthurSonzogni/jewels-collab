@@ -1,7 +1,8 @@
 ---
 url: Bague -athena
-collection: "Bague athena doré "
-title: Bague athena doré
+collection: "Bague athena "
+title: "Bague Athena doré "
 variants:
-  - title: "Argent ou Doré "
+  - title: "Doré "
+    color: Doré
 ---
