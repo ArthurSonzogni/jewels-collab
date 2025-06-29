@@ -1,7 +1,7 @@
 ---
 url: bague-athena
 collection: athena
-title: Bague
+title: "Bague 2 doigts "
 description: >
   Cette bague en argent massif est un bijou d'exception, alliant élégance et
   modernité. Son design unique et sa finition soignée en font un accessoire
@@ -25,12 +25,12 @@ variants:
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: silver
     images:
-      - image: /images/ring-silver.jpeg
-      - image: /images/VINCENT ARNOULD 53.jpg
-      - image: /images/VINCENT ARNOULD 417.jpg
-      - image: /images/VINCENT ARNOULD 392.jpg
-      - image: /images/VINCENT ARNOULD 49.jpg
-      - image: /images/VINCENT ARNOULD 42.jpg
-      - image: /images/VINCENT ARNOULD 472.jpg
-      - image: /images/VINCENT ARNOULD 540.jpg
+      - image: /images/VINCENT ARNOULD 64-1.jpg
+      - image: /images/VINCENT ARNOULD 61.jpg
+      - {}
+      - image: /images/VINCENT ARNOULD 57.jpg
+      - image: /images/VINCENT ARNOULD 248-1.jpg
+      - image: /images/VINCENT ARNOULD 353-1.jpg
+      - {}
+      - {}
 ---
