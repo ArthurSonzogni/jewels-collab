@@ -15,4 +15,8 @@ variants:
     color: Argent
     images:
       - image: /images/VINCENT ARNOULD 45.jpg
+      - image: /images/VINCENT ARNOULD 52.jpg
+      - image: /images/VINCENT ARNOULD 50.jpg
+      - image: /images/VINCENT ARNOULD 418.jpg
+      - image: /images/VINCENT ARNOULD 398.jpg
 ---
