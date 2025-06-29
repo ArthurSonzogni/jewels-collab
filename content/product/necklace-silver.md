@@ -1,5 +1,5 @@
 ---
-url: athena-necklace
+url: athena-collier
 collection: athena
 title: Collier
 description: Mettez en valeur votre décolleté avec ce délicat collier en argent
