@@ -1,5 +1,5 @@
 ---
-url: bague 2 doigts-athena
+url: Bague 2 doigts-athena
 collection: athena
 title: "Bague 2 doigts "
 description: >
