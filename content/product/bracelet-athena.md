@@ -1,6 +1,6 @@
 ---
 url: "Bracelet-athena "
-collection: "Bracelet "
+collection: "athena "
 title: "Bracelet Athéna "
 variants:
   - title: "Argent ou Doré "
