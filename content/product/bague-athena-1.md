@@ -1,5 +1,5 @@
 ---
-url: Bague -athena
+url: bague-athena
 collection: athena
 title: "Bague Athena doré "
 variants:
