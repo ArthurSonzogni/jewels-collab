@@ -1,6 +1,6 @@
 ---
 url: Bague -athena
-collection: "Bague athena "
+collection: athena
 title: "Bague Athena doré "
 variants:
   - title: "Doré "
