@@ -1,7 +1,7 @@
 ---
 url: "Bracelet-athena "
 collection: athena
-title: "Bracelet Athéna "
+title: "Bracelet "
 variants:
   - title: "Argent ou Doré "
     color: Argent
