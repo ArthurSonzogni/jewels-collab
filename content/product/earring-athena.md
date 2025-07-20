@@ -29,7 +29,7 @@ variants:
       - image: /images/VINCENT ARNOULD 9.jpg
       - image: /images/IMG_2336.jpg
       - image: /images/VINCENT ARNOULD 400-1.jpg
-      - image: /images/VINCENT ARNOULD 526-1.jpg
+      - {}
       - {}
       - {}
 ---
