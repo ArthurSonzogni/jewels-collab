@@ -17,6 +17,6 @@ variants:
       - image: /images/VINCENT ARNOULD 45.jpg
       - image: /images/VINCENT ARNOULD 52.jpg
       - image: /images/VINCENT ARNOULD 50.jpg
-      - image: /images/VINCENT ARNOULD 418.jpg
       - {}
+      - image: /images/IMG-20250804-WA0009.jpg
 ---
