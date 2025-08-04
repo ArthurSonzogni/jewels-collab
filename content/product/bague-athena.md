@@ -19,7 +19,7 @@ variants:
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 202.jpg
       - {}
       - image: /images/IMG-20250804-WA0008.jpg
-      - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 166.jpg
+      - {}
       - image: /images/IMG-20250804-WA0010.jpg
   - title: Argent
     price: 350 €
