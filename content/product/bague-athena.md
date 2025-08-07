@@ -9,7 +9,7 @@ description: >
   qualité, elle offre une durabilité exceptionnelle tout en ajoutant une touche
   de sophistication à votre style.
 variants:
-  - title: Or
+  - title: Doré
     price: 450 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: gold
