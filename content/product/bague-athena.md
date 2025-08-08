@@ -30,5 +30,5 @@ variants:
       - {}
       - image: /images/VINCENT ARNOULD 57.jpg
       - image: /images/VINCENT ARNOULD 248-1.jpg
-      - image: /images/vincent_8.jpeg
+      - image: /images/IMG-20250804-WA0008-1.jpg
 ---
