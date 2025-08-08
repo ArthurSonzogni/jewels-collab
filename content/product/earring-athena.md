@@ -1,5 +1,5 @@
 ---
-url: "Boucles d'oreilles "
+url: athena-boucle-oreilles
 collection: athena
 title: Boucles d'Oreilles
 description: Rehaussez votre style avec ces élégantes boucles d'oreilles. Leur
