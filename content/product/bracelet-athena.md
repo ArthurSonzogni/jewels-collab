@@ -1,5 +1,5 @@
 ---
-url: "Bracelet-athena "
+url: athena-bracelet
 collection: athena
 title: "Bracelet "
 variants:
