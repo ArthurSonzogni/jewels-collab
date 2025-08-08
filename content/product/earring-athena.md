@@ -14,22 +14,17 @@ variants:
     images:
       - image: /images/earring-gold.jpeg
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 211.jpg
-      - {}
       - image: /images/model-gold.jpeg
-      - {}
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 219.jpg
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 8.jpg
   - title: Argent
     price: 600 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
-    color: Argenr
+    color: Argent
     images:
       - image: /images/VINCENT ARNOULD 1.jpg
       - image: /images/VINCENT ARNOULD 3-1.jpg
       - image: /images/VINCENT ARNOULD 9.jpg
       - image: /images/IMG_2336.jpg
-      - {}
       - image: /images/IMG-20250804-WA0011.jpg
-      - {}
-      - {}
 ---
