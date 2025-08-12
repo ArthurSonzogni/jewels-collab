@@ -26,5 +26,5 @@ variants:
       - image: /images/VINCENT ARNOULD 3-1.jpg
       - image: /images/VINCENT ARNOULD 9.jpg
       - image: /images/IMG_2336.jpg
-      - image: /images/IMG-20250804-WA0011.jpg
+      - image: /images/IMG_2335.jpg
 ---
