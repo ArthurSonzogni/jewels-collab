@@ -14,11 +14,8 @@ variants:
     images:
       - image: /images/necklace-silver.jpeg
       - image: /images/necklace-silver-2.jpeg
-      - {}
-      - {}
       - image: /images/VINCENT ARNOULD 22.jpg
-      - {}
       - image: /images/VINCENT ARNOULD 16.jpg
       - image: /images/VINCENT ARNOULD 226.jpg
-      - {}
+      - image: /images/IMG-20250804-WA0012.jpg
 ---
