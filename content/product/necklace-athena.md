@@ -14,11 +14,11 @@ variants:
     images:
       - image: /images/necklace-silver.jpeg
       - image: /images/necklace-silver-2.jpeg
-      - image: /images/model-silver.jpeg
-      - image: /images/VINCENT ARNOULD 203.jpg
+      - {}
+      - {}
       - image: /images/VINCENT ARNOULD 22.jpg
-      - image: /images/VINCENT ARNOULD 400.jpg
+      - {}
       - image: /images/VINCENT ARNOULD 16.jpg
       - image: /images/VINCENT ARNOULD 226.jpg
-      - image: /images/VINCENT ARNOULD 144.jpg
+      - {}
 ---
