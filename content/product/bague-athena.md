@@ -10,7 +10,7 @@ description: >
   de sophistication à votre style.
 variants:
   - title: Doré
-    price: 250 €
+    price: 240 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: gold
     images:
@@ -21,7 +21,7 @@ variants:
       - {}
       - image: /images/vincent_2.jpeg
   - title: Argent
-    price: 250 €
+    price: 240 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: silver
     images:
