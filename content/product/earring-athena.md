@@ -7,7 +7,7 @@ description: Rehaussez votre style avec ces élégantes boucles d'oreilles. Leur
   ajouter une note de sophistication à toutes vos tenues. Fabriquées avec des
   matériaux de qualité, elles offrent confort et durabilité.
 variants:
-  - title: Or
+  - title: Doré
     price: 600 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: gold
