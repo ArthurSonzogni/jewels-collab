@@ -10,7 +10,7 @@ description: >
   de sophistication à votre style.
 variants:
   - title: Doré
-    price: 450 €
+    price: 250 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: gold
     images:
@@ -18,10 +18,10 @@ variants:
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 194.jpg
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 202.jpg
       - image: /images/vincent_7.jpeg
-      - image: /images/vincent_1.jpeg
+      - {}
       - image: /images/vincent_2.jpeg
   - title: Argent
-    price: 350 €
+    price: 250 €
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: silver
     images:
@@ -29,5 +29,6 @@ variants:
       - image: /images/VINCENT ARNOULD 61.jpg
       - image: /images/VINCENT ARNOULD 57.jpg
       - image: /images/VINCENT ARNOULD 248-1.jpg
-      - image: /images/IMG-20250804-WA0008-1.jpg
+      - {}
+      - image: /images/IMG-20250804-WA0008.jpg
 ---
