@@ -18,17 +18,22 @@ const props = defineProps({
   title: {
     type: String,
   },
-  image: {
+  image_portrait: {
+    type: String,
+  },
+  image_landscape: {
     type: String,
   },
 });
 
 onMounted(() => {
   if (image.value) {
-    image.value.style.backgroundImage = `url(${props.image})`;
+    image.value.style.setProperty('--background-image-portrait', `url(${props.image_portrait})`);
+    image.value.style.setProperty('--background-image-landscape', `url(${props.image_landscape})`);
   }
   if (image_back.value) {
-    image_back.value.style.backgroundImage = `url(${props.image})`;
+    image_back.value.style.setProperty('--background-image-portrait', `url(${props.image_portrait})`);
+    image_back.value.style.setProperty('--background-image-landscape', `url(${props.image_landscape})`);
   }
 });
 
@@ -64,16 +69,19 @@ onMounted(() => {
   position: absolute;
   top: 0;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   height: 100svh;
   background-repeat: no-repeat;
+  background-image: var(--background-image-portrait);
 
+  @media (orientation: landscape) {
+    background-image: var(--background-image-landscape);
+  }
 }
 
 .backgroundImageBlur {
   filter: blur(10px);
-  background-repeat: repeat;
 }
 
 .title {

@@ -69,7 +69,8 @@ const images = ref(home.meta.images);
       <div v-for="(image, index) in images" :key="index" class="image-item">
         <NuxtLink :to="image.link">
         <ImageFullscreen
-          :image="image.image"
+          :image_portrait="image.image_portrait"
+          :image_landscape="image.image_landscape"
           :title="image.title"
           />
         </NuxtLink>
