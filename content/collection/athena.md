@@ -1,7 +1,7 @@
 ---
 url: athena
 title: Collection Athéna
-description: Ceci est la description de la collection athéna
+description: Inspirée par la déesse grecque de la sagesse et de l'artisanat, la collection Athéna incarne la force et l'élégance. Chaque pièce est un hommage à la féminité moderne, alliant des lignes épurées à des matériaux nobles pour un style intemporel.
 cover_image: /images/collection-gold-cover.png
 images:
   - image: /images/model-gold.jpeg

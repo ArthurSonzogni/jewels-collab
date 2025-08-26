@@ -254,9 +254,7 @@ hr {
   color: rgba(0, 0, 0, 0.1);
 }
 
-.other-product {
-  padding: 20px 0;
-}
+
 
 .other-products-list {
   display: flex;

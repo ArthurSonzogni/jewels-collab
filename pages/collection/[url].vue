@@ -78,16 +78,14 @@ const products = collection.products;
 }
 
 .products-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .products {
   --width: 300px;
   max-width: var(--width);
-  margin: 20px;
 }
 
 .miniature {

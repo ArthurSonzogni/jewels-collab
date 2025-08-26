@@ -1,6 +1,6 @@
 ---
 url: sur_mesure 
 title: "Collection sur mesure"
-description: "Une description de la collection sur mesure, mettant en avant l'artisanat et la personnalisation des bijoux."
+description: "La collection sur mesure est une invitation à créer le bijou de vos rêves. En collaboration avec notre artisan joaillier, donnez vie à une pièce unique qui raconte votre histoire. Chaque bijou est façonné à la main avec des matériaux d'exception, pour une création qui vous ressemble."
 cover_image: /images/earring-colored.jpeg
 ---

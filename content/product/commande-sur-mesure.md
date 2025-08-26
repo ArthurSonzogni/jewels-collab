@@ -3,7 +3,7 @@ url: "commande-sur-mesure"
 collection: sur_mesure
 title: "Boucles d'oreilles tsavorites et tourmalines "
 description: >
-  Remplir ici.
+  Ces boucles d'oreilles uniques sont une création sur mesure, réalisées avec des tsavorites et des tourmalines. Chaque pierre a été soigneusement sélectionnée pour sa couleur et sa brillance, créant un bijou d'exception qui ne manquera pas de faire tourner les têtes.
 variants:
   - title: tsavorites et tourmalines
     price: Sur demande
