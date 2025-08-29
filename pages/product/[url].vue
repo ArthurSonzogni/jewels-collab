@@ -44,6 +44,9 @@
               >
               Acheter
             </UButton>
+            <div v-if="product.meta.variants[variant].payment_link" class="klarna-advertisement text-center">
+              Payez en 3x sans frais avec Klarna
+            </div>
           </div>
 
           <div class="large_screen">
@@ -83,6 +86,9 @@
               >
               Acheter
             </UButton>
+            <div v-if="product.meta.variants[variant].payment_link" class="klarna-advertisement">
+              Payez en 3x sans frais avec Klarna
+            </div>
           </div>
         </div>
       </div>
@@ -242,6 +248,12 @@ html {
 
 .title {
   font-weight: bold;
+}
+
+.klarna-advertisement {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 8px;
 }
 
 
