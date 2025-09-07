@@ -8,7 +8,7 @@ description: >
   tout en ajoutant une touche de sophistication à votre main.
 variants:
   - title: Argent
-    price: 180 € paiement X3 possible
+    price: 190 € paiement X3 possible
     color: Argent
     images:
       - image: /images/VINCENT ARNOULD 45.jpg
@@ -16,7 +16,7 @@ variants:
       - image: /images/VINCENT ARNOULD 50.jpg
       - image: /images/IMG-20250804-WA0009.jpg
   - title: "Doré "
-    price: 180 € paiement X3 possible
+    price: 190 € paiement X3 possible
     color: Doré
     images:
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 191-1.jpg
