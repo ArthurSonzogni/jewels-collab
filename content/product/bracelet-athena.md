@@ -1,12 +1,14 @@
 ---
 url: athena-bracelet
 collection: athena
-title: "Bracelet Athéna"
+title: Bracelet Athéna
 description: >
-  Le bracelet Athéna est un bijou d'une grande finesse qui habille le poignet avec élégance. Sa chaîne délicate et son design épuré en font un accessoire intemporel, parfait pour toutes les occasions.
+  Le bracelet Athéna est un bijou d'une grande finesse qui habille le poignet
+  avec élégance. Sa chaîne délicate et son design épuré en font un accessoire
+  intemporel, parfait pour toutes les occasions.
 variants:
-  - title: "Argent et Doré"
-    price: 150 €
+  - title: Argent et Doré
+    price: "650 € paiement X3 possible "
     color: Argent
     images:
       - image: /images/VINCENT ARNOULD 35.jpg
