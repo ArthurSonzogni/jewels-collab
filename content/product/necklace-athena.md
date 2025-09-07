@@ -8,7 +8,7 @@ description: Mettez en valeur votre décolleté avec ce délicat collier en arge
   style quotidien ou pour compléter une tenue élégante.
 variants:
   - title: Argent
-    price: 1000 €
+    price: "1000 € paiement X3 possible "
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
     color: silver
     images:
