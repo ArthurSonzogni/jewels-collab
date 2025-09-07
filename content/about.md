@@ -2,9 +2,9 @@
 
 **L'art de la joaillerie au service de l'élégance intemporelle**
 
-Vincent Arnould, joaillier passionné et créateur visionnaire, incarne l'excellence et la finesse dans l'univers de la haute joaillerie. Depuis ses débuts, il a su allier technique, innovation et savoir-faire traditionnel pour offrir des pièces uniques qui capturent l’essence de la beauté pure et de l’intemporalité.
+Vincent Arnould,lapidaire,passionné et créateur visionnaire, incarne l'excellence et la finesse dans l'univers de la haute joaillerie Francaise. Depuis ses débuts, il a su allier technique, innovation et savoir-faire traditionnel pour offrir des pièces uniques qui capturent l’essence de la beauté pure et de l’intemporalité.
 
-Chaque bijou qu'il crée est un témoignage de son amour pour l’artisanat et de son désir d’offrir à ses clients des objets précieux qui racontent une histoire. Travaillant exclusivement avec les matériaux les plus nobles — or, platine, diamants et pierres précieuses — Vincent Arnould apporte une attention méticuleuse à chaque détail, de la conception à la finition.
+Chaque bijou qu'il crée est un témoignage de son amour pour l’artisanat et de son désir d’offrir à ses clients des objets précieux qui racontent une histoire, une évasion. Travaillant exclusivement avec les matériaux les plus nobles — or, platine, diamants et pierres précieuses — Vincent Arnould apporte une attention méticuleuse à chaque détail, de la conception à la finition.
 
 ### Une Passion pour la Perfection
 
@@ -14,7 +14,7 @@ Fasciné par la beauté des formes naturelles et inspiré par l'art classique de
 
 Vincent Arnould croit fermement que chaque bijou doit être une œuvre d’art, non seulement en raison de sa beauté, mais aussi de son histoire et de sa fabrication. Chacune de ses pièces est réalisée à la main, en prenant le temps d'affiner chaque détail. L'accent est mis sur la qualité, la précision et l'originalité, créant des bijoux à la fois modernes et intemporels.
 
-Les collections de Vincent Arnould se distinguent par leurs lignes épurées, leurs matériaux nobles et leur capacité à faire ressortir la personnalité de celui ou celle qui les porte. Chaque bijou est conçu pour sublimer les traits et l’élégance de son propriétaire, qu’il s’agisse d’une bague de fiançailles, d'un collier ou d'une paire de boucles d’oreilles.
+Les collections de Vincent Arnould se distinguent par leurs lignes épurées, leurs matériaux nobles et leur capacité à faire ressortir la personnalité de celui ou celle qui les porte. Chaque bijou est conçu pour sublimer les traits et l’élégance de son propriétaire, qu’il s’agisse d’une bague,d'un collier ou d'une paire de boucles d’oreilles.
 
 ### Une Création sur Mesure
 
