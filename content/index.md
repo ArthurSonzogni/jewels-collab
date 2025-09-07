@@ -1,5 +1,5 @@
 ---
-title: Jewels-Collab " un bijoux qui est vous "
+title: "Jewels-Collab "
 images:
   - title: "La Collection Argent "
     link: /product/bague-athena?variant=1
