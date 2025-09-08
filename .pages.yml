@@ -25,7 +25,8 @@ content:
         list: true
         fields:
           - {name: "title", label: "Titre", type: "string"}
-          - {name: "image", label: "Image", type: "image"}
+          - {name: "image_portrait", label: "Fond Portrait", type: "image"}
+          - {name: "image_landscape", label: "Fond Paysage", type: "image"}
           - {name: "link", label: "Lien", type: "string"}
 
   - name: "product"
