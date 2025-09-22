@@ -8,14 +8,14 @@ description: >
   tout en ajoutant une touche de sophistication à votre main.
 variants:
   - title: Argent
-    price: 190 € paiement X3 possible
+    price: 170 € paiement X3 possible
     color: Argent
     images:
       - image: /images/VINCENT ARNOULD 53.jpg
       - image: /images/bague_athena_22092025-2.jpeg
       - image: /images/IMG-20250804-WA0009.jpg
   - title: "Doré "
-    price: 190 € paiement X3 possible
+    price: 170 € paiement X3 possible
     color: Doré
     images:
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 191-1.jpg
