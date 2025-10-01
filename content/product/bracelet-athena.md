@@ -11,9 +11,9 @@ variants:
     price: "650 € paiement X3 possible "
     color: Argent
     images:
-      - {}
       - image: /images/VINCENT ARNOULD 31-1.jpg
       - image: /images/VINCENT ARNOULD 39-1.jpg
+      - image: /images/IMG-20250804-WA0009.jpg
       - image: /images/VINCENT ARNOULD 239-1.jpg
       - image: /images/VINCENT ARNOULD 243.jpg
 ---
