@@ -10,7 +10,7 @@ variants:
   - title: Argent
     price: "1000 € paiement X3 possible "
     payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
-    color: silver
+    color: argent
     images:
       - image: /images/necklace-silver.jpeg
       - image: /images/necklace-silver-2.jpeg
