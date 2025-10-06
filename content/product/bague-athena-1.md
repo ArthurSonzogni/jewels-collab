@@ -14,7 +14,7 @@ variants:
       - image: /images/VINCENT ARNOULD 53.jpg
       - image: /images/bague_athena_22092025-2.jpeg
       - image: /images/bague_athena_3.jpeg
-      - image: /images/bague_athena_retouche.jpeg
+      - image: /images/IMG-20250924-WA0000-1.jpg
       - image: /images/VINCENT ARNOULD 248-1.jpg
   - title: "Doré "
     price: 170 € paiement X3 possible
