@@ -9,4 +9,6 @@ images:
     image_portrait: /images/IMG-20250908-WA0000-1.jpg
     image_landscape: /images/gold-forest-2_landscape.jpg
     link: /product/bague-athena?variant=0
+  - title: "La Collection Canin "
+    image_portrait: /images/1760206319326.jpg
 ---
