@@ -1,5 +1,7 @@
 ---
 title: Jewels-Collab
+videos:
+  - link: https://m.youtube.com/watch?v=tXxmUyMSLUA&pp=ygUbbGFwaWRhaXJlIHBpZXJyZSBwcsOpY2lldXNl
 images:
   - title: "La Collection Argent "
     image_portrait: /images/IMG-20250422-WA0005-1.jpg
@@ -11,4 +13,5 @@ images:
     link: /product/bague-athena?variant=0
   - title: "La Collection Canin "
     image_portrait: /images/Screenshot_20251011_211936_Gallery.jpg
+  - image_portrait: /images/IMG-20251014-WA0002.jpg
 ---
