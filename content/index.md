@@ -1,5 +1,4 @@
 ---
-title: Jewels-Collab
 videos:
   - link: https://m.youtube.com/watch?v=tXxmUyMSLUA&pp=ygUbbGFwaWRhaXJlIHBpZXJyZSBwcsOpY2lldXNl
 images:
