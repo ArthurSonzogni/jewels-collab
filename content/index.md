@@ -1,6 +1,6 @@
 ---
 videos:
-  - link: https://m.youtube.com/watch?v=tXxmUyMSLUA&pp=ygUbbGFwaWRhaXJlIHBpZXJyZSBwcsOpY2lldXNl
+  - {}
 images:
   - title: "La Collection Argent "
     image_portrait: /images/IMG-20250422-WA0005-1.jpg
