@@ -16,5 +16,5 @@ variants:
       - image: /images/VINCENT ARNOULD 76.jpg
       - image: /images/VINCENT ARNOULD 73.jpg
       - image: /images/20230820_114447.jpg
-      - image: /images/IMG-20250310-WA0003.jpg
+      - {}
 ---
