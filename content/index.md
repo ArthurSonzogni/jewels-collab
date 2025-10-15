@@ -1,6 +1,4 @@
 ---
-videos:
-  - {}
 images:
   - title: "La Collection Argent "
     image_portrait: /images/IMG-20250422-WA0005-1.jpg
