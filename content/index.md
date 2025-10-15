@@ -10,6 +10,6 @@ images:
     link: /product/bague-athena?variant=0
   - title: "La Collection Canin "
     image_portrait: /images/1760485436690.jpg
-    image_landscape: /images/1760485662170.jpg
+    image_landscape: /images/1760489694623.jpg
   - image_portrait: /images/IMG-20251014-WA0002.jpg
 ---
