@@ -5,7 +5,7 @@ description: Inspirée par la déesse grecque de la sagesse et de l'artisanat, l
   collection Athéna incarne la force et l'élégance. Chaque pièce est un hommage
   à la féminité moderne, alliant des lignes épurées à des matériaux nobles pour
   un style intemporel.
-cover_image: /images/goddess-athena-897628.jpg
+cover_image: /images/1760486689486.jpg
 images:
   - image: /images/model-gold.jpeg
   - image: /images/model-gold-2.jpeg
