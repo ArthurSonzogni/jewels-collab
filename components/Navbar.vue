@@ -86,6 +86,7 @@ const collections = await GetCollections();
         </NuxtLink>
       </strong>
       <hr/>
+      <img src="/images/logo.jpg" alt="Logo">
 
     </template>
   </USlideover>
