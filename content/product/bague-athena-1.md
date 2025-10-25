@@ -8,7 +8,7 @@ description: >
   tout en ajoutant une touche de sophistication à votre main.
 variants:
   - title: Argent
-    price: 170 € paiement X3 possible
+    price: Disponible 2026
     color: Argent
     images:
       - image: /images/VINCENT ARNOULD 53.jpg
