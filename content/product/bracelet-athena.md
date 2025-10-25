@@ -8,7 +8,7 @@ description: >
   intemporel, parfait pour toutes les occasions.
 variants:
   - title: Argent et Doré
-    price: "650 € paiement X3 possible "
+    price: Disponible en 2026
     color: Argent
     images:
       - image: /images/VINCENT ARNOULD 31-1.jpg
