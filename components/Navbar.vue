@@ -10,6 +10,8 @@ const { data: home } = await useAsyncData(() =>
 
 const collections = await GetCollections();
 
+const logo = home.value.meta.logo;
+
 </script>
 
 <template>
@@ -86,7 +88,7 @@ const collections = await GetCollections();
         </NuxtLink>
       </strong>
       <hr/>
-      <img src="/images/logo.jpg" alt="Logo">
+      <img :src="logo" alt="Logo"/>
 
     </template>
   </USlideover>

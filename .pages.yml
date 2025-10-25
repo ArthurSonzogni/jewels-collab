@@ -10,6 +10,7 @@ content:
     filename: "index.md"
     fields:
       - {name: "title", label: "Titre", type: "string"}
+      - {name: "logo", label: "Logo", type: "image"}
       - name: "videos"
         label: "Vidéos"
         type: "object"
