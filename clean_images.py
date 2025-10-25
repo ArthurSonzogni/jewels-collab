@@ -20,10 +20,16 @@ all_images = all_images - {'.gitkeep'}
 
 unused_images = all_images - referenced_images
 
+# Remove directories if any (not expected in this case)
+unused_images = [img for img in unused_images if
+                 os.path.isfile(os.path.join(images_path, img))]
+
 for image in unused_images:
     full_path = os.path.join(images_path, image)
     print(f'Removing unused image: {full_path}')
     os.remove(full_path)
+
+exit(0)
 
 # Part 2: Remove references to non-existing images.
 all_images = set(os.listdir(images_path))
