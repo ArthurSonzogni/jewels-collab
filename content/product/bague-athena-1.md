@@ -8,7 +8,7 @@ description: >
   tout en ajoutant une touche de sophistication à votre main.
 variants:
   - title: Argent
-    price: Disponible 2026
+    price: Disponible en 2026
     color: Argent
     images:
       - image: /images/VINCENT ARNOULD 53.jpg
@@ -17,7 +17,7 @@ variants:
       - image: /images/1760487363420.jpg
       - image: /images/VINCENT ARNOULD 248-1.jpg
   - title: "Doré "
-    price: 170 € paiement X3 possible
+    price: Disponible en 2026
     color: Doré
     images:
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 191-1.jpg
