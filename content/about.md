@@ -1,13 +1,22 @@
-## À propos de Jewels-collab et Vincent Arnould 
+## À propos de Jewels-collab et Vincent Arnould
 
-son métier 
-https://m.youtube.com/watch?v=tXxmUyMSLUA&pp=ygUbbGFwaWRhaXJlIHBpZXJyZSBwcsOpY2lldXNl
+### L' Artisanat d'Exception
 
-**L'art de la joaillerie au service de l'élégance intemporelle**
+[![Vincent Arnould Lapidaire](https://i.ytimg.com/vi/tXxmUyMSLUA/hqdefault.jpg)](https://m.youtube.com/watch?v=tXxmUyMSLUA&pp=ygUbbGFwaWRhaXJlIHBpZXJyZSBwcsOpY2lldXNl)
 
-La finesse de Vincent Arnould lapidaire pierres precieuses pour la haute joaillerie francaise depuis 20ans formé par Van cleef and Arpels se lance dans l'univers de la haute fantaisie Francaise, alliant technique, innovation et savoir-faire traditionnel,pour offrir des pièces uniques qui capturent l’essence de la beauté pure et de l’intemporalité.
+**L'art de la joaillerie transcendé au service de votre élégance.**
 
-- **Créations uniques** : Chaque pièce est réalisée sur mesure pour refléter l’essence de celui ou celle qui la porte.
-- **Savoir-faire exceptionnel** : Un engagement envers l’excellence et la perfection dans chaque création.
-- **Personnalisation totale** : Des bijoux conçus spécifiquement pour vous, adaptés à vos envies et à vos émotions.
-- **Matériaux nobles et durables** : 
+**Vincent Arnould** est un Maître Lapidaire dont l'expertise a été forgée durant **deux décennies au sommet de la Haute Joaillerie française**. Son parcours, notamment au sein de la Maison de renom **Van Cleef & Arpels**, lui confère une maîtrise et une exigence inégalées.
+
+Avec Jewels-collab, Vincent Arnould déploie ce savoir-faire d'excellence dans l'univers de la haute fantaisie. Chaque création est le fruit d'une alliance parfaite entre technique traditionnelle, innovation et précision, révélant l'éclat unique de chaque pierre.
+
+![Vincent Arnould](/images/about/vincent.jpeg)
+
+---
+
+### La Promesse Jewels-collab
+
+* **Créations sur Mesure** : Des pièces uniques, façonnées pour capturer et refléter l'essence et l'histoire singulière de celui ou celle qui les porte.
+* **Héritage d'Excellence** : Un engagement absolu envers la perfection, héritier des plus grandes traditions joaillières.
+* **Une Signature Personnelle** : L'opportunité de posséder un bijou entièrement conçu pour vous, en harmonie avec vos désirs les plus raffinés.
+* **Matériaux Nobles et Durables** : Une sélection intransigeante de matières premières garantissant la pérennité et le prestige de votre acquisition.
