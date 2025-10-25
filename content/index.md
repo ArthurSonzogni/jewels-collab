@@ -1,5 +1,5 @@
 ---
-logo: /images/logo.jpg
+logo: /images/IMG-20251017-WA0003.jpg
 images:
   - title: "La Collection Canin "
     image_portrait: /images/1760485436690.jpg
