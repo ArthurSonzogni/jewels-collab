@@ -10,8 +10,7 @@ description: >
   de sophistication à votre style.
 variants:
   - title: Doré
-    price: 220 €  paiement X3 possible
-    payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
+    price: Disponible en 2026
     color: gold
     images:
       - image: /images/VINCENT ARNOULD BAGUE 2 DOIGTS 206.jpg
@@ -21,8 +20,7 @@ variants:
       - {}
       - image: /images/vincent_2.jpeg
   - title: Argent
-    price: "220 € paiement X3 possible "
-    payment_link: https://buy.stripe.com/test_8wM03B1TGca3cXCdQQ
+    price: Disponible en 2026
     color: silver
     images:
       - image: /images/VINCENT ARNOULD 64-1.jpg
