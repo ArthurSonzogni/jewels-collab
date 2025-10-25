@@ -11,15 +11,6 @@ content:
     fields:
       - {name: "title", label: "Titre", type: "string"}
       - {name: "logo", label: "Logo", type: "image"}
-      - name: "videos"
-        label: "Vidéos"
-        type: "object"
-        list: true
-        fields:
-          - {name: "title", label: "Titre", type: "string"}
-          - {name: "portrait", label: "Vidéo Portrait", type: "string"}
-          - {name: "landscape", label: "Vidéo Paysage", type: "string"}
-          - {name: "link", label: "Lien", type: "string"}
       - name: "images"
         label: "Images"
         type: "object"
@@ -28,6 +19,15 @@ content:
           - {name: "title", label: "Titre", type: "string"}
           - {name: "image_portrait", label: "Fond Portrait", type: "image"}
           - {name: "image_landscape", label: "Fond Paysage", type: "image"}
+          - {name: "link", label: "Lien", type: "string"}
+      - name: "videos"
+        label: "Vidéos"
+        type: "object"
+        list: true
+        fields:
+          - {name: "title", label: "Titre", type: "string"}
+          - {name: "portrait", label: "Vidéo Portrait", type: "string"}
+          - {name: "landscape", label: "Vidéo Paysage", type: "string"}
           - {name: "link", label: "Lien", type: "string"}
 
   - name: "product"
