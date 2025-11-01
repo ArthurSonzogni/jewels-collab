@@ -24,3 +24,11 @@ Chaque création est le fruit d'une alliance parfaite entre technique traditionn
 * **Héritage d'Excellence** : Un engagement absolu envers la perfection, héritier des plus grandes traditions joaillières.
 * **Une Signature Personnelle** : L'opportunité de posséder un bijou entièrement conçu pour vous, en harmonie avec vos désirs les plus raffinés.
 * **Matériaux Nobles et Durables** : Une sélection intransigeante de matières premières garantissant la pérennité et le prestige de votre acquisition.
+
+
+contact pour commandes:
+Vincent 
+arnould 
+0617402013
+instagram: jewelscollab18
+
