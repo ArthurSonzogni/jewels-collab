@@ -10,4 +10,5 @@ variants:
     color: Sur demande
     images:
       - image: /images/IMG-20251019-WA0014.jpg
+      - image: /images/IMG-20251019-WA0003.jpg
 ---
