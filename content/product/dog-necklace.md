@@ -2,8 +2,7 @@
 url: dog-necklace
 collection: accessories-for-dogs
 title: Collier
-description: Collier pour chien en argent massif 925/1000, fait main en France.
-  Personnalisable avec le nom de votre chien.
+description: Collier
 variants:
   - title: "Colliers personalisable "
     price: 420€ - 500€
