@@ -26,9 +26,10 @@ Chaque création est le fruit d'une alliance parfaite entre technique traditionn
 * **Matériaux Nobles et Durables** : Une sélection intransigeante de matières premières garantissant la pérennité et le prestige de votre acquisition.
 
 
-contact pour commandes:
+contact pour toutes commandes:
+vinc388@hotmail.fr 
 Vincent 
-arnould 
+Arnould 
 0617402013
 instagram: jewelscollab18
 
