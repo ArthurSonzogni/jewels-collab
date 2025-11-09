@@ -1,5 +1,3 @@
----
-body: |
   ## À propos de Jewels-collab et Vincent Arnould
 
   ### L' Artisanat d'Exception
@@ -18,8 +16,6 @@ body: |
 
   ![Vincent Arnould](/images/about/vincent.jpeg)
 
-  ---
-
   ### La Promesse Jewels-collab
 
   * **Créations sur Mesure** : Des pièces uniques, façonnées pour capturer et refléter l'essence et l'histoire singulière de celui ou celle qui les porte.
@@ -30,9 +26,8 @@ body: |
 
   contact pour toutes commandes:
 
-  vinc388@hotmail.fr 
-  Vincent 
-  Arnould 
-  0617402013
-  instagram: jewelscollab18
----
+  - Vincent Arnould 
+  - vinc388@hotmail.fr 
+  - 0617402013
+  - instagram: jewelscollab18
+

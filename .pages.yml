@@ -86,9 +86,13 @@ content:
     type: "file"
     path: "content/cgu.md"
     filename: "cgu.md"
+    fields:
+      - {name: "body", label: "Contenu", type: "rich-text"}
 
   - name: "cgv"
     label: "CGV"
     type: "file"
     path: "content/cgv.md"
     filename: "cgv.md"
+    fields:
+      - {name: "body", label: "Contenu", type: "rich-text"}
