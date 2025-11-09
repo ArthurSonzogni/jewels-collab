@@ -16,8 +16,6 @@ Avec Jewels-collab, Vincent Arnould déploie ce savoir-faire d'excellence dans l
 
 ![](/images/vincent_apropos.jpeg)
 
-![](/images/vincent_apropos.jpeg)
-
 ![](/images/vincent_katia_improved.jpeg)
 
 ### La Promesse Jewels-collab
