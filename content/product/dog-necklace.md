@@ -15,4 +15,7 @@ variants:
       - image: /images/IMG-20251019-WA0015.jpg
       - image: /images/IMG-20251019-WA0005.jpg
       - image: /images/IMG-20251019-WA0011.jpg
+      - image: /images/IMG-20251112-WA0010.jpg
+      - image: /images/IMG-20251112-WA0009.jpg
+      - image: /images/IMG-20251112-WA0007.jpg
 ---
