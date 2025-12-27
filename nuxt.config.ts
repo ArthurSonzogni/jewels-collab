@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   target: 'static',
   ssr: false,
   site: {
-    url: 'https://jewels-collab.com',
+    url: 'https://vincentarnould.com',
   },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
